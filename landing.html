@@ -1,0 +1,1211 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>모두다 · AX 아카데미 (3개 과정)</title>
+<meta name="description" content="모두다 AX 아카데미 — AX 컨설턴트 · 기업 AX 챔피언 · 프로덕트 창업 세 과정. 하루 100장+ 강의안과 강별 실습데이터, 앞 산출물이 다음 실습의 입력이 되는 연속 따라하기.">
+<link rel="canonical" href="landing.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect width='20' height='20' rx='4' fill='%230f172a'/%3E%3Ccircle cx='4.5' cy='6' r='2' fill='%23fff'/%3E%3Ccircle cx='15' cy='4.8' r='2' fill='%23fff'/%3E%3Ccircle cx='11.5' cy='15' r='2' fill='%23fff'/%3E%3Cpath d='M4.5 6 15 4.8M15 4.8 11.5 15M4.5 6l7 9' stroke='%23fff' stroke-width='1.2' fill='none' opacity='.85'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="모두다 MODE-DA">
+<meta property="og:title" content="모두다 · AX 아카데미 (3개 과정)">
+<meta property="og:description" content="모두다 AX 아카데미 — AX 컨설턴트 · 기업 AX 챔피언 · 프로덕트 창업 세 과정. 하루 100장+ 강의안과 강별 실습데이터, 앞 산출물이 다음 실습의 입력이 되는 연속 따라하기.">
+<meta property="og:image" content="assets/og-cover.svg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="모두다 · AX 아카데미 (3개 과정)">
+<meta name="twitter:description" content="모두다 AX 아카데미 — AX 컨설턴트 · 기업 AX 챔피언 · 프로덕트 창업 세 과정. 하루 100장+ 강의안과 강별 실습데이터, 앞 산출물이 다음 실습의 입력이 되는 연속 따라하기.">
+<meta name="twitter:image" content="assets/og-cover.svg">
+<meta name="theme-color" content="#0f172a">
+<style>
+  :root{
+    --blue:#3182F6; --blue-press:#1B64DA; --blue-weak:#E8F3FF;
+    --amber:#F5A524; --amber-weak:#FFF3DE;
+    --ink:#0A0E17; --ink-2:#121826; --ink-3:#1B2436;
+    --g900:#141924; --g700:#3A4354; --g600:#586173; --g500:#828B9B; --g300:#CBD1DA;
+    --g200:#E4E8EE; --g100:#F1F3F7; --g50:#F8FAFC; --white:#fff;
+    --green:#12B886; --red:#F0506B;
+    /* semantic (light default) */
+    --bg:#F8FAFC; --band:#FFFFFF; --surface:#FFFFFF; --ink-sec:var(--ink);
+    --text:#141924; --text2:#3A4354; --text3:#586173; --line:#E4E8EE;
+    --accent:var(--blue); --accent-weak:var(--blue-weak); --warm:var(--amber);
+    --shadow:0 10px 30px rgba(16,24,40,.08); --shadow-sm:0 2px 8px rgba(16,24,40,.05);
+    --r:22px; --r-sm:14px; --r-chip:999px;
+    --sans:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",system-ui,Roboto,sans-serif;
+    --mono:"SFMono-Regular",ui-monospace,Menlo,Consolas,monospace;
+    --max:1160px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0A0E17; --band:#0E1420; --surface:#141B29; --text:#EAEEF5; --text2:#B4BECE;
+      --text3:#8A94A6; --line:#232D40; --accent:#4C97FF; --accent-weak:#16233B; --blue-weak:#16233B;
+      --shadow:0 12px 34px rgba(0,0,0,.5); --shadow-sm:0 2px 10px rgba(0,0,0,.4);}
+  }
+  :root[data-theme="dark"]{ --bg:#0A0E17; --band:#0E1420; --surface:#141B29; --text:#EAEEF5; --text2:#B4BECE;
+      --text3:#8A94A6; --line:#232D40; --accent:#4C97FF; --accent-weak:#16233B; --blue-weak:#16233B;
+      --shadow:0 12px 34px rgba(0,0,0,.5); --shadow-sm:0 2px 10px rgba(0,0,0,.4);}
+  :root[data-theme="light"]{ --bg:#F8FAFC; --band:#FFFFFF; --surface:#FFFFFF; --text:#141924; --text2:#3A4354;
+      --text3:#586173; --line:#E4E8EE; --accent:var(--blue); --accent-weak:var(--blue-weak); --blue-weak:#E8F3FF;
+      --shadow:0 10px 30px rgba(16,24,40,.08); --shadow-sm:0 2px 8px rgba(16,24,40,.05);}
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;letter-spacing:-.01em;transition:background .4s,color .4s;
+    word-break:keep-all;overflow-wrap:break-word}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
+  h1,h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.035em;line-height:1.08;text-wrap:balance;
+    word-break:keep-all;overflow-wrap:break-word}
+  p{margin:0}a{color:inherit;text-decoration:none}
+  .mono{font-family:var(--mono);letter-spacing:0}
+  .tnum{font-variant-numeric:tabular-nums}
+  .btn{font:inherit;font-weight:700;font-size:16px;border:0;cursor:pointer;padding:15px 26px;border-radius:var(--r-sm);
+    display:inline-flex;align-items:center;gap:9px;transition:transform .12s,background .2s,box-shadow .2s}
+  .btn:active{transform:scale(.97)}
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 22px rgba(49,130,246,.34)}
+  .btn-primary:hover{background:var(--blue-press)}
+  .btn-line{background:transparent;color:inherit;border:1.5px solid currentColor;opacity:.9}
+  .btn-line:hover{opacity:1;border-color:var(--accent);color:var(--accent)}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.02em;
+    text-transform:uppercase;color:var(--text3)}
+  .eyebrow .no{font-family:var(--mono);color:var(--warm);font-size:15px;font-weight:700;letter-spacing:0}
+
+  /* nav */
+  header.bar{position:sticky;top:0;z-index:70;background:color-mix(in srgb,var(--bg) 78%,transparent);
+    backdrop-filter:saturate(160%) blur(16px);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:18px;letter-spacing:-.03em}
+  .brand .m{width:32px;height:32px;border-radius:10px;background:var(--accent);display:grid;place-items:center;
+    box-shadow:0 6px 16px rgba(49,130,246,.4)}
+  .brand small{display:block;font-size:11px;font-weight:600;color:var(--text3);letter-spacing:.02em}
+  nav.links{display:flex;gap:26px;font-size:14.5px;font-weight:700}
+  nav.links a{color:var(--text2)} nav.links a:hover,nav.links a.on{color:var(--accent)}
+  .navr{display:flex;gap:10px;align-items:center}
+  .tg{width:38px;height:38px;border-radius:11px;border:1px solid var(--line);background:var(--surface);
+    color:var(--text2);cursor:pointer;font-size:15px;display:grid;place-items:center}
+  .btn.sm{padding:10px 18px;font-size:14px;border-radius:11px}
+  @media(max-width:880px){nav.links{display:none}}
+
+  /* ===== HERO (dark, canvas graph) ===== */
+  .hero{position:relative;background:radial-gradient(120% 100% at 78% 0%,#101a30 0%,#0A0E17 60%);
+    color:#EDF1F8;overflow:hidden;border-bottom:1px solid #1a2233}
+  #twincanvas{position:absolute;inset:0;width:100%;height:100%;opacity:.9}
+  .hero .glow{position:absolute;right:-8%;top:8%;width:620px;height:620px;border-radius:50%;
+    background:radial-gradient(circle,rgba(49,130,246,.26),transparent 62%);filter:blur(10px);pointer-events:none}
+  .hero .wrap{position:relative;z-index:2;padding-top:88px;padding-bottom:96px;max-width:var(--max)}
+  .hchip{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:700;color:#9fb4d8;
+    border:1px solid #223049;background:rgba(20,28,44,.6);padding:8px 15px;border-radius:var(--r-chip)}
+  .hchip .d{width:7px;height:7px;border-radius:50%;background:var(--warm);box-shadow:0 0 10px var(--warm)}
+  .hero h1{margin-top:26px;font-size:clamp(44px,8vw,92px);letter-spacing:-.045em;color:#fff;line-height:.98}
+  .hero h1 .u{background:linear-gradient(180deg,transparent 62%,rgba(245,165,36,.9) 62%);padding:0 .04em}
+  .hero h1 .b{color:#7FB2FF}
+  .hero .sub{margin-top:28px;max-width:30ch;font-size:19px;color:#AEBBD2;font-weight:500}
+  .hero .row{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+  .hero .metrics{display:flex;gap:34px;margin-top:44px;flex-wrap:wrap;border-top:1px solid #1c2740;padding-top:26px;max-width:640px}
+  .hero .metrics .n{font-size:30px;font-weight:800;color:#fff;letter-spacing:-.03em}
+  .hero .metrics .l{font-size:13px;color:#8595b2;font-weight:600;margin-top:3px}
+
+  /* ===== generic section ===== */
+  section{padding:96px 0}
+  .band{background:var(--band)}
+  .head{max-width:64ch}
+  .head h2{font-size:clamp(28px,3.8vw,44px);margin-top:16px;letter-spacing:-.035em}
+  .head p{margin-top:16px;color:var(--text2);font-size:18px;font-weight:500}
+
+  /* promise strip */
+  .promise{display:grid;grid-template-columns:1.35fr .9fr;gap:44px;align-items:center}
+  .promise .q{font-size:clamp(23px,3vw,34px);font-weight:800;line-height:1.32;letter-spacing:-.03em}
+  .promise .q .hl{color:var(--accent)}
+  .kpi4{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .kpi4 .c{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:20px;box-shadow:var(--shadow-sm)}
+  .kpi4 .n{font-size:27px;font-weight:800;color:var(--accent)}
+  .kpi4 .l{font-size:13.5px;color:var(--text3);font-weight:600;margin-top:3px}
+  @media(max-width:760px){.promise{grid-template-columns:1fr;gap:26px}}
+
+  /* bento (역량) */
+  .bento{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-auto-rows:minmax(0,auto);gap:16px;margin-top:44px}
+  .tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--shadow-sm);
+    transition:transform .16s,box-shadow .2s}
+  .tile:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .tile.tall{grid-row:span 2}
+  .tile .k{font-size:13px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:var(--accent)}
+  .tile h3{font-size:22px;margin-top:12px}
+  .tile .who{font-size:13px;color:var(--text3);font-weight:600;margin-top:4px}
+  .tile ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+  .tile li{padding-left:24px;position:relative;font-size:15px;color:var(--text2);font-weight:500}
+  .tile li::before{content:"";position:absolute;left:3px;top:.55em;width:8px;height:8px;border-radius:2px;background:var(--accent);transform:rotate(45deg)}
+  .tile.warm .k{color:var(--warm)} .tile.warm li::before{background:var(--warm)}
+  @media(max-width:820px){.bento{grid-template-columns:1fr 1fr}.tile.tall{grid-row:auto}}
+  @media(max-width:560px){.bento{grid-template-columns:1fr}}
+
+  /* ===== statement: 차별화 (light, tinted) ===== */
+  .tinted{background:var(--accent-weak)}
+  .frame{margin-top:26px;font-size:clamp(20px,2.6vw,30px);font-weight:800;letter-spacing:-.03em;color:var(--text)}
+  .frame .a{color:var(--accent)} .frame .arrow{color:var(--text3);margin:0 .3em}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .pil{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow-sm)}
+  .pil .n{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-weight:800;color:#fff;font-size:16px}
+  .pil h4{font-size:19px;margin-top:14px;color:var(--text)}
+  .pil .tag{font-size:12.5px;color:var(--text3);font-weight:700;margin-top:3px}
+  .pil p{margin-top:12px;font-size:14px;color:var(--text2);font-weight:500;line-height:1.55}
+  .cmp{margin-top:20px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;overflow-x:auto;background:var(--surface)}
+  table.ct{width:100%;border-collapse:collapse;font-size:14.5px;min-width:560px}
+  table.ct th,table.ct td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+  table.ct thead th{background:var(--band);color:var(--text);font-weight:700;font-size:13.5px}
+  table.ct tbody tr:last-child td{border-bottom:0}
+  table.ct td.k{color:var(--text);font-weight:700;width:96px}
+  table.ct td.o{color:var(--text3)} table.ct td.x{color:var(--accent);font-weight:600}
+  .dnote{margin-top:20px;font-size:14.5px;color:var(--text2);font-weight:500}
+  .dnote b{color:var(--accent)}
+  @media(max-width:760px){.pillars{grid-template-columns:1fr}}
+
+  /* journey (numbered) */
+  .flow{display:flex;gap:0;margin-top:44px;flex-wrap:wrap;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+  .fstep{flex:1 1 150px;padding:24px 18px;background:var(--surface);border-right:1px solid var(--line)}
+  .fstep:last-child{border-right:0}
+  .fstep .w{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--warm)}
+  .fstep h4{font-size:16px;margin-top:12px}
+  .fstep h4 small{font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--text3);margin-left:5px}
+  .fstep p{font-size:12.5px;color:var(--text3);margin-top:7px;font-weight:500}
+  .fstep.hot{background:var(--accent);border-color:var(--accent)}
+  .fstep.hot .w{color:#ffe1a8} .fstep.hot h4{color:#fff} .fstep.hot p{color:#dbe8ff}
+
+  /* steps (numbered grid) */
+  .grid8{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+  .s8{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:22px;box-shadow:var(--shadow-sm);
+    transition:transform .16s,box-shadow .2s}
+  .s8:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .s8 .no{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--warm)}
+  .s8 h4{font-size:16.5px;margin-top:9px}
+  .s8 p{font-size:13px;color:var(--text2);margin-top:8px;font-weight:500;line-height:1.5}
+  .s8 .d{margin-top:12px;font-size:11.5px;color:var(--text3);border-top:1px dashed var(--line);padding-top:9px;font-weight:600}
+  .s8 .d b{color:var(--accent)}
+  @media(max-width:900px){.grid8{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.grid8{grid-template-columns:1fr}}
+
+  /* curriculum */
+  .parts{margin-top:40px;display:flex;flex-direction:column;gap:14px}
+  details.part{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);box-shadow:var(--shadow-sm);overflow:hidden}
+  details.part summary{list-style:none;cursor:pointer;padding:22px 24px;display:flex;align-items:center;gap:18px;user-select:none}
+  details.part summary::-webkit-details-marker{display:none}
+  .part .rn{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--warm);min-width:44px}
+  .part .pt{font-size:19px;font-weight:800;letter-spacing:-.02em}
+  .part .pd{font-size:13px;color:var(--text3);margin-top:2px;font-weight:600}
+  .part .pl{margin-left:auto;color:var(--text3);font-size:24px;transition:transform .2s}
+  details.part[open] .pl{transform:rotate(45deg);color:var(--accent)}
+  .part .body{padding:2px 26px 22px 88px}
+  .part ol{margin:0;padding:0;list-style:none}
+  .part ol li{padding:12px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline}
+  .part ol li .ln{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap}
+  .part ol li b{font-weight:700}
+  .part ol li span.t{color:var(--text2);font-size:14.5px;font-weight:500}
+  @media(max-width:640px){.part .body{padding-left:24px}}
+
+  /* field/hack */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+  .big{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:var(--shadow-sm)}
+  .big.acc{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 16px 40px rgba(49,130,246,.32)}
+  .big .l{font-size:13px;font-weight:800;color:var(--accent)} .big.acc .l{color:#ffe1a8}
+  .big h3{font-size:23px;margin-top:10px} .big.acc h3{color:#fff}
+  .big p{margin-top:14px;color:var(--text2);font-size:15px;font-weight:500} .big.acc p{color:#e6efff}
+  .big ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14px;font-weight:600}
+  .big li{padding-left:24px;position:relative;color:var(--text2)} .big li::before{content:"→";position:absolute;left:0;color:var(--accent)}
+  .big.acc li{color:#e6efff} .big.acc li::before{color:#ffe1a8}
+  @media(max-width:760px){.two{grid-template-columns:1fr}}
+
+  /* CTA (blue, not dark) */
+  .cta{background:linear-gradient(135deg,var(--accent),var(--blue-press));color:#fff;border-radius:28px;
+    padding:70px 40px;text-align:center;box-shadow:0 20px 50px rgba(49,130,246,.32)}
+  .cta h2{font-size:clamp(30px,4.4vw,50px);color:#fff}
+  .cta h2 .a{color:#FFD98A}
+  .cta p{margin:18px auto 0;max-width:48ch;color:#e6efff;font-size:18px;font-weight:500}
+  .tline{display:flex;gap:12px;justify-content:center;margin:36px auto 0;max-width:760px;flex-wrap:wrap}
+  .tc{flex:1 1 150px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:16px}
+  .tc .d{font-family:var(--mono);color:#FFD98A;font-weight:700;font-size:15px}
+  .tc .t{font-size:13px;color:#eaf1ff;margin-top:6px;font-weight:600}
+  .cta .row{display:flex;gap:12px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+  .btn-white{background:#fff;color:var(--blue-press)} .btn-white:hover{background:#eef4ff}
+  .btn-dim{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.3)}
+
+  /* ===== apply modal ===== */
+  .ov{position:fixed;inset:0;z-index:100;background:rgba(10,14,23,.55);backdrop-filter:blur(4px);
+    display:none;align-items:center;justify-content:center;padding:20px}
+  .ov.on{display:flex}
+  .modal{width:100%;max-width:460px;background:var(--surface);border:1px solid var(--line);border-radius:24px;
+    box-shadow:var(--shadow);padding:30px;max-height:92vh;overflow-y:auto;
+    animation:pop .18s ease}
+  @keyframes pop{from{transform:translateY(10px) scale(.98);opacity:0}to{transform:none;opacity:1}}
+  .modal .x{float:right;background:var(--band);border:1px solid var(--line);width:34px;height:34px;border-radius:10px;
+    cursor:pointer;color:var(--text2);font-size:16px}
+  .modal h3{font-size:23px;letter-spacing:-.03em}
+  .modal .lead{margin-top:8px;color:var(--text3);font-size:14px;font-weight:500}
+  .fld{margin-top:16px}
+  .fld label{display:block;font-size:13.5px;font-weight:700;color:var(--text2);margin-bottom:7px}
+  .fld label .req{color:var(--accent)}
+  .fld input,.fld textarea,.fld select{width:100%;font:inherit;font-size:15px;padding:12px 14px;border-radius:12px;
+    border:1.5px solid var(--line);background:var(--band);color:var(--text);outline:none;transition:border-color .15s}
+  .fld input:focus,.fld textarea:focus,.fld select:focus{border-color:var(--accent)}
+  .fld textarea{resize:vertical;min-height:76px}
+  .fld .err{color:var(--red);font-size:12.5px;margin-top:6px;display:none;font-weight:600}
+  .fld.bad input,.fld.bad textarea{border-color:var(--red)}
+  .fld.bad .err{display:block}
+  .modal .submit{width:100%;margin-top:22px;justify-content:center}
+  .modal .fine{margin-top:12px;font-size:11.5px;color:var(--text3);text-align:center;line-height:1.5}
+  .done{text-align:center;padding:14px 4px 6px}
+  .done .ic{width:62px;height:62px;border-radius:50%;background:var(--accent-weak);color:var(--accent);
+    display:grid;place-items:center;font-size:30px;margin:0 auto 14px}
+  .done h3{font-size:22px} .done p{margin-top:10px;color:var(--text2);font-size:14.5px;font-weight:500}
+  .done .sum{margin-top:16px;text-align:left;background:var(--band);border:1px solid var(--line);border-radius:14px;
+    padding:14px 16px;font-size:13.5px;color:var(--text2)}
+  .done .sum b{color:var(--text)}
+
+  .currmore{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:26px}
+  .authbox{display:flex;gap:8px;align-items:center}
+  .authbox .who{font-size:13px;font-weight:700;color:var(--text2);white-space:nowrap}
+  @media (max-width:860px){ .authbox{display:none} }
+  footer{padding:46px 0 60px;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:flex-start}
+  footer .fine{font-size:13px;color:var(--text3);max-width:60ch;line-height:1.65;font-weight:500}
+
+  /* ===== 공통 chip ===== */
+  .chip{font-size:12px;font-weight:700;color:var(--text3);background:var(--band);border:1px solid var(--line);
+    border-radius:var(--r-chip);padding:5px 12px}
+
+  /* ===== 3개 과정 오버뷰 카드 ===== */
+  .progs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+  .prog{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;
+    box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .16s,box-shadow .2s}
+  .prog:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .prog .pk{font-size:12.5px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:var(--accent)}
+  .prog.c2 .pk{color:var(--green)} .prog.c3 .pk{color:var(--warm)}
+  .prog h3{font-size:21px;margin-top:9px}
+  .prog .one{margin-top:10px;font-size:14.5px;color:var(--text2);font-weight:500;line-height:1.55}
+  .prog .meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}
+  .prog .days{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+  .prog .days li{font-size:13px;color:var(--text2);font-weight:500}
+  .prog .days li .dn{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700;margin-right:7px}
+  .prog.c2 .days li .dn{color:var(--green)} .prog.c3 .days li .dn{color:var(--warm)}
+  .prog .nums{display:flex;gap:16px;margin-top:16px;border-top:1px solid var(--line);padding-top:14px;flex-wrap:wrap}
+  .prog .nums .n{font-size:17px;font-weight:800;color:var(--text);letter-spacing:-.02em}
+  .prog .nums .l{font-size:11px;color:var(--text3);font-weight:600;margin-top:1px}
+  .prog .out{margin-top:14px;font-size:12.5px;color:var(--text3);font-weight:600;line-height:1.55}
+  .prog .out b{color:var(--text2)}
+  .prog .act{margin-top:auto;padding-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+  .prog .act .btn{flex:1 1 auto;justify-content:center}
+  @media(max-width:860px){.progs{grid-template-columns:1fr}}
+
+  /* ===== 공통 강점 5칸 ===== */
+  .str{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:34px}
+  .str .tile{padding:22px}
+  .str .tile h3{font-size:17px}
+  .str .tile p{margin-top:9px;font-size:13px;color:var(--text2);font-weight:500;line-height:1.5}
+  @media(max-width:900px){.str{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.str{grid-template-columns:1fr}}
+
+  /* ===== 과정 섹션 리드 ===== */
+  .clead{display:flex;gap:18px;align-items:flex-start;border-top:3px solid var(--accent);padding-top:26px}
+  .clead.c2{border-top-color:var(--green)} .clead.c3{border-top-color:var(--warm)}
+  .clead .ctag{font-family:var(--mono);font-weight:800;font-size:14px;color:#fff;background:var(--accent);
+    border-radius:12px;padding:9px 13px;white-space:nowrap}
+  .clead.c2 .ctag{background:var(--green)} .clead.c3 .ctag{background:var(--warm)}
+  .clead h2{font-size:clamp(26px,3.6vw,42px)}
+  .clead .one{margin-top:12px;color:var(--text2);font-size:17px;font-weight:500;max-width:60ch}
+  .clead .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  @media(max-width:560px){.clead{flex-direction:column;gap:14px}}
+
+  /* ===== 산출물 그리드 ===== */
+  .outs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+  .outs .o{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:18px;box-shadow:var(--shadow-sm)}
+  .outs .o .t{font-size:12px;font-weight:800;color:var(--accent)}
+  .outs .o p{font-size:13.5px;color:var(--text2);font-weight:600;margin-top:7px;line-height:1.5}
+  .c2 .outs .o .t{color:var(--green)} .c3 .outs .o .t{color:var(--warm)}
+  @media(max-width:820px){.outs{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.outs{grid-template-columns:1fr}}
+
+  /* ===== 학습 자료 (교재·부록) ===== */
+  .matwrap{display:flex;flex-direction:column;gap:18px;margin-top:44px}
+  .matgrp{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;
+    box-shadow:var(--shadow-sm);border-top:3px solid var(--accent);transition:transform .18s ease,box-shadow .22s ease}
+  .matgrp:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .matgrp.g2{border-top-color:var(--green)} .matgrp.g3{border-top-color:var(--warm)}
+  .matgrp .gh{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .matgrp .gk{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--accent)}
+  .matgrp.g2 .gk{color:var(--green)} .matgrp.g3 .gk{color:var(--warm)}
+  .matgrp .gt{font-size:20px;font-weight:800;letter-spacing:-.025em}
+  .matgrp .gd{font-size:13.5px;color:var(--text3);font-weight:600;margin-top:6px;line-height:1.5}
+  .matlist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+  .matcard{border:1px solid var(--line);border-radius:var(--r-sm);padding:16px 17px;background:var(--band);
+    display:flex;gap:13px;align-items:flex-start;transition:border-color .18s ease,transform .18s ease,box-shadow .2s ease}
+  .matcard:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+  .matgrp.g2 .matcard:hover{border-color:var(--green)} .matgrp.g3 .matcard:hover{border-color:var(--warm)}
+  .matcard .mt{font-family:var(--mono);font-size:10.5px;font-weight:800;color:#fff;background:var(--accent);
+    border-radius:7px;padding:5px 8px;letter-spacing:.03em;white-space:nowrap;flex-shrink:0;margin-top:1px}
+  .matgrp.g2 .matcard .mt{background:var(--green)} .matgrp.g3 .matcard .mt{background:var(--warm)}
+  .matcard .mb{flex:1;min-width:0}
+  .matcard .mb b{display:block;font-size:14.5px;font-weight:700;color:var(--text);letter-spacing:-.01em}
+  .matcard .mb span{display:block;font-size:12.5px;color:var(--text3);font-weight:500;margin-top:4px;line-height:1.45}
+  .matcard .badge{align-self:flex-start;font-size:10.5px;font-weight:700;color:var(--text3);background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--r-chip);padding:4px 10px;white-space:nowrap;flex-shrink:0}
+  .matnote{margin-top:22px;font-size:13.5px;color:var(--text3);font-weight:500;line-height:1.65}
+  @media(max-width:640px){.matlist{grid-template-columns:1fr}.matgrp{padding:22px}}
+
+  /* ===== 섹션 진입 페이드 (IntersectionObserver) ===== */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"AX 컨설턴트 양성 과정","description":"10일 집중 · 개론 6강과 실전 10강, 딥트윈 8 STEP","url":"landing.html","provider":{"@type":"EducationalOrganization","name":"모두다 MODE-DA"}}</script>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="m"><svg width="18" height="18" viewBox="0 0 20 20"><circle cx="4" cy="6" r="2.3" fill="#fff"/><circle cx="15.5" cy="4.5" r="2.3" fill="#fff"/><circle cx="12" cy="15.5" r="2.3" fill="#fff"/><path d="M4 6 15.5 4.5M15.5 4.5 12 15.5M4 6l8 9.5" stroke="#fff" stroke-width="1.4" fill="none" opacity=".85"/></svg></span>
+      <div>모두다 <span style="color:var(--text3)">MODE-DA</span><small>AX 아카데미 · 3개 과정</small></div>
+    </div>
+    <nav class="links" id="navLinks">
+      <a href="philosophy.html">사상</a><a href="platform.html">플랫폼</a>
+      <div class="nav-drop" id="navDrop">
+      <button class="nav-drop-btn" id="solBtn" type="button" aria-expanded="false" aria-controls="solPanel" data-href="solutions.html">솔루션 <span class="caret" aria-hidden="true"></span></button>
+      <div class="sol-panel" id="solPanel" role="group" aria-label="솔루션 목록">
+        <div class="sol-grid">
+        <a class="sol-item" href="solution-grounded-knowledge-base.html">
+          <span class="sol-code">S1</span>
+          <span class="sol-text"><strong>근거 있는 지식 기반</strong><em>Grounded Knowledge Base</em><small>출처 없는 답을 하지 않는 지식 기반을 만듭니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-agent-operations.html">
+          <span class="sol-code">S2</span>
+          <span class="sol-text"><strong>AI 운영센터 — 실행하는 AI 조직</strong><em>Agent Operations</em><small>답변이 아니라 실행까지, 사람 승인을 거쳐 갑니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-business-ontology-layer.html">
+          <span class="sol-code">S3</span>
+          <span class="sol-text"><strong>업무 온톨로지 계층</strong><em>Business Ontology Layer</em><small>데이터를 옮기는 게 아니라 업무 객체로 다시 세웁니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-owned-erp.html">
+          <span class="sol-code">S4</span>
+          <span class="sol-text"><strong>소유하는 맞춤 ERP</strong><em>Owned ERP</em><small>업무를 ERP에 맞추지 않습니다. ERP를 업무에 맞춥니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-continuous-modernization.html">
+          <span class="sol-code">S5</span>
+          <span class="sol-text"><strong>무중단 현대화</strong><em>Continuous Modernization</em><small>레거시를 멈추지 않은 채, 모듈 하나씩 바꿉니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-knowledge-compounding.html">
+          <span class="sol-code">S6</span>
+          <span class="sol-text"><strong>지식 복리</strong><em>Knowledge Compounding</em><small>한 일이 다음 일을 빠르게 만듭니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        </div>
+        <a class="sol-all" href="solutions.html">솔루션 전체 보기 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+      <a href="landing.html" class="on">AX 컨설턴트</a><a href="champion.html">기업 AX 챔피언</a><a href="startup.html">프로덕트 창업</a><a href="courses.html">과정 비교</a>
+    </nav>
+    <div class="navr">
+      <button class="tg" id="tg" title="테마 전환" aria-label="테마 전환">◐</button>
+      <span class="authbox" data-auth-slot>
+        <a href="login.html" class="btn btn-line sm">로그인</a>
+        <a href="signup.html" class="btn btn-primary sm">회원가입</a>
+      </span>
+      <a href="#apply" class="btn btn-primary sm" data-apply>지원하기</a>
+      <button class="burger" id="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span class="bl" aria-hidden="true"></span><span class="bl" aria-hidden="true"></span><span class="bl" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="twincanvas" aria-hidden="true"></canvas>
+  <div class="glow"></div>
+  <div class="wrap">
+    <span class="hchip"><span class="d"></span>모두다 AX 아카데미 · 3개 과정 · 1기 알파 <b style="color:#7ee2a8">모집 중</b> · 수시 접수</span>
+    <h1>배우고 끝이 아니라,<br><span class="b">만들어</span><span class="u"> 냅니다.</span></h1>
+    <p class="sub"><b style="color:#fff">AX 컨설턴트 · 기업 AX 챔피언 · 프로덕트 창업</b> — 세 과정 모두
+      하루 100장+ 강의안과 강별 실습데이터로, 앞에서 만든 산출물이 다음 실습의 입력이 되는 연속 따라하기로 배웁니다.</p>
+    <div class="row">
+      <a href="#programs" class="btn btn-primary">3개 과정 보기</a>
+      <a href="#common" class="btn btn-line" style="color:#cdd8ec">공통 강점 보기</a>
+    </div>
+    <div class="metrics">
+      <div><div class="n tnum">3개</div><div class="l">과정 (컨설턴트·챔피언·창업)</div></div>
+      <div><div class="n tnum">100장+</div><div class="l">하루 강의안</div></div>
+      <div><div class="n">강별</div><div class="l">실습 데이터셋</div></div>
+      <div><div class="n">연속</div><div class="l">따라하기 실습</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section>
+  <div class="wrap promise">
+    <div class="q">강의만 듣고 끝나는 교육이 아니라, <span class="hl">직접 손으로 만들어 산출물로 남기는</span>
+      교육. 세 과정 모두 같은 원칙으로 설계했습니다.</div>
+    <div class="kpi4">
+      <div class="c"><div class="n">2,573장</div><div class="l">3개 과정 강의안 합계</div></div>
+      <div class="c"><div class="n">2,200p+</div><div class="l">3개 과정 교재 합계</div></div>
+      <div class="c"><div class="n">강별</div><div class="l">실습 데이터셋</div></div>
+      <div class="c"><div class="n">연속</div><div class="l">앞 산출물→다음 입력</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS : 3개 과정 오버뷰 -->
+<section id="programs" class="band">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">AX 아카데미 · 세 개의 과정</div>
+      <h2>목표는 다르지만, 만드는 방식은 같습니다</h2>
+      <p>컨설턴트로 데뷔하든, 사내 챔피언이 되든, 내 프로덕트를 런칭하든 — 세 과정 모두
+        하루 100장+ 강의안·강별 실습데이터·연속 따라하기로 진행합니다.</p>
+    </div>
+    <div class="progs">
+      <div class="prog c1">
+        <div class="pk">Track ① · Consultant</div>
+        <h3>AX 컨설턴트 양성 과정</h3>
+        <p class="one">말하는 컨설턴트가 아니라 <b>만드는 컨설턴트</b>. 온톨로지·에이전트로 고객 업무를 복제해 데뷔합니다.</p>
+        <div class="meta"><span class="chip">대상 · 예비/1인 지식창업 · 현업 전환</span><span class="chip">10일 집중 + 실전·해커톤</span></div>
+        <ul class="days">
+          <li><span class="dn">Day1–3</span>AX 컨설팅 개론 (정체성·시장·거버넌스)</li>
+          <li><span class="dn">Day4–7</span>실전 A–Z (발굴·진단·제안·계약·수행·확장)</li>
+          <li><span class="dn">Day8–10</span>딥트윈 8 STEP (온톨로지→배포)</li>
+          <li><span class="dn">필드</span>무상 실전 프로젝트 → 1박2일 해커톤·데뷔</li>
+        </ul>
+        <div class="nums">
+          <div><div class="n">약 1,211장</div><div class="l">강의안 Day1~10</div></div>
+          <div><div class="n">약 1,279p</div><div class="l">교재 + 부록 워크북</div></div>
+        </div>
+        <div class="out"><b>산출물</b> 진단서·제안서·SOW·딥트윈 8STEP 납품물·최종보고서·데뷔 인증</div>
+        <div class="act">
+          <a href="#apply" class="btn btn-primary sm" data-apply data-course="consultant">지원하기</a>
+          <a href="#consultant" class="btn btn-line sm">자세히</a>
+        </div>
+      </div>
+
+      <div class="prog c2">
+        <div class="pk">Track ② · Champion</div>
+        <h3>기업 AX 챔피언 과정</h3>
+        <p class="one">외부 컨설턴트가 떠나면 지식도 떠납니다. <b>사내에서 계속 굴릴 챔피언</b>을 길러 암묵지를 자산으로.</p>
+        <div class="meta"><span class="chip">대상 · 사내 실무자(임직원)</span><span class="chip">5일 집합 · 8주 운영</span></div>
+        <ul class="days">
+          <li><span class="dn">CDay1</span>리더십 · 조직 정렬</li>
+          <li><span class="dn">CDay2</span>부서 진단 · 유스케이스 발굴</li>
+          <li><span class="dn">CDay3</span>환경 · 온톨로지 · 에이전트</li>
+          <li><span class="dn">CDay4</span>통합 · 검증배포 · 확산</li>
+          <li><span class="dn">CDay5</span>거버넌스 · 성과관리 · 발표</li>
+        </ul>
+        <div class="nums">
+          <div><div class="n">약 719장</div><div class="l">강의안 CDay1~5</div></div>
+          <div><div class="n">약 469p</div><div class="l">교재</div></div>
+        </div>
+        <div class="out"><b>산출물</b> 내 업무 자동화 지도·대시보드·자동화/에이전트·부서 AX 실행 청사진</div>
+        <div class="act">
+          <a href="#apply" class="btn btn-primary sm" data-apply data-course="champion">지원하기</a>
+          <a href="#champion" class="btn btn-line sm">자세히</a>
+        </div>
+      </div>
+
+      <div class="prog c3">
+        <div class="pk">Track ③ · Product</div>
+        <h3>프로덕트 창업 과정</h3>
+        <p class="one">만들기 전에 팔릴지부터. 바이브코딩·랄프 루프로 <b>회원가입·결제까지 붙여 실제 배포</b>합니다.</p>
+        <div class="meta"><span class="chip">대상 · 예비/1인 창업자</span><span class="chip">5일 · 8주</span></div>
+        <ul class="days">
+          <li><span class="dn">PDay1</span>아이디어 · 시장 검증</li>
+          <li><span class="dn">PDay2</span>MVP · 바이브코딩</li>
+          <li><span class="dn">PDay3</span>데이터/자동화 · 결제 · 검증배포</li>
+          <li><span class="dn">PDay4</span>런칭 · 그로스 · 가격</li>
+          <li><span class="dn">PDay5</span>자동화 · 스케일 · 데모데이</li>
+        </ul>
+        <div class="nums">
+          <div><div class="n">약 643장</div><div class="l">강의안 PDay1~5</div></div>
+          <div><div class="n">약 459p</div><div class="l">교재</div></div>
+        </div>
+        <div class="out"><b>산출물</b> 검증 리포트·배포된 MVP(로그인·결제)·런칭 킷·데모데이 발표</div>
+        <div class="act">
+          <a href="#apply" class="btn btn-primary sm" data-apply data-course="product">지원하기</a>
+          <a href="#product" class="btn btn-line sm">자세히</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMON : 공통 강점 + 비교표 -->
+<section id="common">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">왜 모두다인가 · 공통 강점</div>
+      <h2>세 과정을 관통하는 다섯 가지</h2>
+      <p>“AI로 대충 만든 커리큘럼”과 다른 지점입니다. 분량이 아니라 <b style="color:var(--text)">손으로 만들어 남기는 구조</b>가 핵심입니다.</p>
+    </div>
+    <div class="str">
+      <div class="tile"><div class="k">01</div><h3>하루 100장+ 강의안</h3><p>Day별 100장이 넘는 슬라이드로 개념·예시·실습을 촘촘히 연결합니다.</p></div>
+      <div class="tile warm"><div class="k">02</div><h3>강별 실습데이터</h3><p>강의마다 실제 CSV·스크립트 등 실습 데이터셋이 함께 제공됩니다.</p></div>
+      <div class="tile"><div class="k">03</div><h3>연속 따라하기</h3><p>앞 강의의 산출물이 다음 강의의 입력이 되어 하나의 프로젝트로 이어집니다.</p></div>
+      <div class="tile warm"><div class="k">04</div><h3>결과 화면 캡처</h3><p>“여기까지 하면 이 화면”이 보이도록 결과 화면을 함께 담았습니다.</p></div>
+      <div class="tile"><div class="k">05</div><h3>딥트윈 방법론</h3><p>온톨로지·데이터·에이전트로 업무를 복제하는 공통 방법론 위에 세 과정이 서 있습니다.</p></div>
+    </div>
+    <div class="cmp" style="margin-top:40px">
+      <table class="ct">
+        <thead><tr><th>관점</th><th>AX 컨설턴트</th><th>기업 AX 챔피언</th><th>프로덕트 창업</th></tr></thead>
+        <tbody>
+          <tr><td class="k">대상</td><td class="o">예비/1인 지식창업 · 현업 전환</td><td class="o">사내 실무자(임직원)</td><td class="o">예비/1인 창업자</td></tr>
+          <tr><td class="k">기간</td><td class="o">10일 집중 + 실전·해커톤</td><td class="o">5일 집합 · 8주 운영</td><td class="o">5일 · 8주</td></tr>
+          <tr><td class="k">일자</td><td class="o">Day1~10</td><td class="o">CDay1~5</td><td class="o">PDay1~5</td></tr>
+          <tr><td class="k">강의안</td><td class="x">약 1,211장</td><td class="x">약 719장</td><td class="x">약 643장</td></tr>
+          <tr><td class="k">교재</td><td class="o">약 1,279p + 부록 워크북</td><td class="o">약 469p</td><td class="o">약 459p</td></tr>
+          <tr><td class="k">실습데이터</td><td class="x">강별 제공</td><td class="x">강별 제공</td><td class="x">강별 제공</td></tr>
+          <tr><td class="k">마무리</td><td class="o">무상 프로젝트 → 해커톤·데뷔</td><td class="o">부서 AX 실행 청사진 발표</td><td class="o">데모데이</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 과정 ① AX 컨설턴트 (상세) ================= -->
+<section class="band" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="clead c1" id="consultant">
+      <span class="ctag">과정 ①</span>
+      <div>
+        <h2>AX 컨설턴트 양성 과정</h2>
+        <p class="one">이론이 아니라 데뷔로 증명합니다. 컨설팅 역량과 딥트윈 구축 역량을 함께 길러, 실제 고객 프로젝트와 해커톤으로 마무리합니다.</p>
+        <div class="meta">
+          <span class="chip">대상 · 예비/1인 지식창업 · 현업 전환</span>
+          <span class="chip">10일 집중 + 실전·해커톤</span>
+          <span class="chip">강의안 약 1,211장 (Day1~10)</span>
+          <span class="chip">교재 약 1,279p + 부록 워크북</span>
+        </div>
+        <div class="act" style="margin-top:18px;display:flex;gap:8px;flex-wrap:wrap">
+          <a href="#apply" class="btn btn-primary sm" data-apply data-course="consultant">지원하기</a>
+          <a href="curriculum.html" class="btn btn-line sm">커리큘럼 전문</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACKS (bento) -->
+<section id="tracks" class="band">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">01</span> 두 가지 역량</div>
+      <h2>역량 = 컨설팅 × 구축</h2>
+      <p>진단·설득하는 힘과, 해법을 직접 만들어 배포하는 힘. 이 둘의 곱이 ‘만드는 컨설턴트’를 만듭니다.</p>
+    </div>
+    <div class="bento">
+      <div class="tile tall">
+        <div class="k">Consulting</div>
+        <h3>AX 컨설팅 전문 커리큘럼</h3>
+        <div class="who">개론 4강 + 실전 9강 · 실전 케이스 기반</div>
+        <ul>
+          <li>AX의 정의·시장·수익 모델, 컨설턴트의 정체성</li>
+          <li>고객 발굴 → 상담 → 진단 → 문제 정의</li>
+          <li>제안서·세일즈·클로징·계약서</li>
+          <li>챔피언 발굴·육성, 수행·변화관리</li>
+          <li>마무리와 확장(Land &amp; Expand), 롱런 전략</li>
+        </ul>
+      </div>
+      <div class="tile warm">
+        <div class="k">Build</div>
+        <h3>딥트윈 에이전틱 구축</h3>
+        <div class="who">8단계 · 코딩을 몰라도 시작</div>
+        <ul>
+          <li>환경설정 + 하네스·랄프 루프</li>
+          <li>온톨로지 · 데이터 · 트윈</li>
+          <li>에이전트(HITL) · RAG · 배포</li>
+        </ul>
+      </div>
+      <div class="tile">
+        <div class="k">Field</div>
+        <h3>실전 무상 프로젝트</h3>
+        <div class="who">실제 고객과 10일</div>
+        <ul><li>진단→구축→검증→최종 보고</li><li>우수 시 유상·리테이너 전환</li></ul>
+      </div>
+      <div class="tile" style="grid-column:span 2">
+        <div class="k">Finale</div>
+        <h3>1박2일 AX 해커톤 → 컨설턴트 데뷔 인증</h3>
+        <div class="who">문제 발제 → 딥트윈 설계 → 구축(하네스·루프) → 발표·심사 → 데뷔 + 동문 네트워크</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY / 차별화 (light tinted) -->
+<section id="why" class="tinted">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">02</span> 왜 AX ERP인가</div>
+      <div class="frame">기록하는 ERP <span class="arrow">→</span> <span class="a">이해하고 · 판단하고 · 소유하는</span> ERP</div>
+      <p style="margin-top:18px">패키지·구독형 ERP가 ‘데이터를 담는 그릇’이라면, AX ERP는 ‘스스로 일하고 자산으로 남는 시스템’입니다.</p>
+    </div>
+    <div class="pillars">
+      <div class="pil"><span class="n" style="background:var(--blue)">①</span><h4>이해한다</h4><div class="tag">온톨로지 기반</div>
+        <p>화면·테이블이 아니라 개념·관계(의미)부터. 업무가 바뀌어도 무너지지 않고 AI가 ‘왜’를 추론·설명.</p></div>
+      <div class="pil"><span class="n" style="background:#12B886">②</span><h4>판단·실행한다</h4><div class="tag">에이전틱 · HITL</div>
+        <p>AI 에이전트가 감지→판단→실행(사람 승인). ‘입력하는 ERP’가 아니라 ‘일하는 ERP’.</p></div>
+      <div class="pil"><span class="n" style="background:var(--amber)">③</span><h4>소유한다</h4><div class="tag">자산화</div>
+        <p>소스·DB·업무로직·온톨로지 KB가 회사 자산. 탈종속·자유 확장, 구독형은 계약 끝나면 소멸.</p></div>
+    </div>
+    <div class="cmp">
+      <table class="ct">
+        <thead><tr><th>관점</th><th>패키지·구독형 ERP</th><th>AX ERP (딥트윈 + AX Platform)</th></tr></thead>
+        <tbody>
+          <tr><td class="k">뼈대</td><td class="o">고정 데이터·화면</td><td class="x">온톨로지(의미) 기반</td></tr>
+          <tr><td class="k">동작</td><td class="o">기록·조회(사람 입력)</td><td class="x">에이전틱 — 감지·판단·실행(HITL)</td></tr>
+          <tr><td class="k">소유</td><td class="o">계약 끝나면 무형 소멸</td><td class="x">소스·DB·로직·KB = 회사 자산</td></tr>
+          <tr><td class="k">종속</td><td class="o">벤더·라이선스 lock-in</td><td class="x">탈종속 — 자유 확장</td></tr>
+          <tr><td class="k">성장</td><td class="o">매번 커스터마이징 비용</td><td class="x">복리 — 라이브러리·KB 재사용</td></tr>
+          <tr><td class="k">배포</td><td class="o">벤더 고정</td><td class="x">클라우드/하이브리드/온프레미스·로컬 LLM</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="dnote">방법은 <b>딥트윈 8단계</b>(신뢰할 수 있게 빠른), 그릇은 <b>AX Platform</b>(자산 재사용·계열 확산).
+      단, 자체구축은 구축·유지 역량이 필요합니다 — <b>핵심은 자체구축·범용은 구독</b>하는 하이브리드가 현실적.</p>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="band">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">03</span> 5주의 여정</div>
+      <h2>선발에서 데뷔까지, 5주</h2>
+      <p>강의 10일은 <b style="color:var(--text)">Day1 → Day10</b> 한 방향으로 흐릅니다.
+        정체성을 잡고(개론) → 고객 앞에 서고(실전) → 직접 만들어 배포합니다(딥트윈).</p>
+    </div>
+    <div class="flow">
+      <div class="fstep"><div class="w">W0</div><h4>선발·온보딩</h4><p>인터뷰 · 환경설정 · 팀 구성</p></div>
+      <div class="fstep"><div class="w">W1</div><h4>개론 <small>Day1–3</small></h4><p>정체성 · 여정 · 거버넌스 + 특강</p></div>
+      <div class="fstep"><div class="w">W2</div><h4>실전 <small>Day4–7</small></h4><p>발굴·진단·제안·계약·수행·확장</p></div>
+      <div class="fstep"><div class="w">W3</div><h4>딥트윈 <small>Day8–10</small></h4><p>STEP 1–8 · 온톨로지에서 배포까지</p></div>
+      <div class="fstep hot"><div class="w">W4</div><h4>실전 프로젝트</h4><p>실제 고객 10일</p></div>
+      <div class="fstep hot"><div class="w">W5</div><h4>해커톤·데뷔</h4><p>1박2일 · 인증</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEEP TWIN -->
+<section id="twin">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">04</span> 딥트윈 방법론</div>
+      <h2>고객 업무를 디지털 쌍둥이로 — 8단계</h2>
+      <p>온톨로지 + 데이터 + AI 에이전트로 업무를 복제합니다. 각 단계는 반드시 <b style="color:var(--text)">납품물</b>로 끝납니다.</p>
+    </div>
+    <div class="grid8">
+      <div class="s8"><div class="no">STEP 1</div><h4>구축 환경 설정</h4><p>도구·인증, 프로젝트 뼈대, 하네스·랄프 루프.</p><div class="d"><b>납품</b> 개발환경 + 성공기준</div></div>
+      <div class="s8"><div class="no">STEP 2</div><h4>도메인 온톨로지</h4><p>개념·관계, T-Box/A-Box, 용어 통일.</p><div class="d"><b>납품</b> 미니 온톨로지</div></div>
+      <div class="s8"><div class="no">STEP 3</div><h4>데이터 파이프라인</h4><p>원천·정제, 저장 위치 결정.</p><div class="d"><b>납품</b> 데이터셋 + 파이프라인도</div></div>
+      <div class="s8"><div class="no">STEP 4</div><h4>디지털 트윈 모델링</h4><p>상태·이벤트·KPI, SSOT.</p><div class="d"><b>납품</b> 트윈 모델 + KPI 정의서</div></div>
+      <div class="s8"><div class="no">STEP 5</div><h4>AI 에이전트 설계</h4><p>HITL, 가드레일·롤백, 오케스트레이션.</p><div class="d"><b>납품</b> 설계서 + 프로토타입</div></div>
+      <div class="s8"><div class="no">STEP 6</div><h4>RAG · 지식베이스</h4><p>근거 응답·출처, 온톨로지 연계.</p><div class="d"><b>납품</b> 고객 문서 RAG 데모</div></div>
+      <div class="s8"><div class="no">STEP 7</div><h4>통합 · 자동화</h4><p>API·기존 시스템, 회원가입·간편인증.</p><div class="d"><b>납품</b> 로그인되는 통합 앱</div></div>
+      <div class="s8"><div class="no">STEP 8</div><h4>검증 · 배포 · 운영</h4><p>3중 게이트, 배포, 버전관리.</p><div class="d"><b>납품</b> 배포된 앱 + 운영 가이드</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section id="curr" class="band">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">05</span> 전체 커리큘럼</div>
+      <h2>커리큘럼 상세 — 펼쳐 보기</h2>
+      <p>강의 순서 그대로입니다. 각 항목의 <span class="mono">Day</span> 번호가
+        실제 교재·강의안 파일의 번호와 일치합니다.</p>
+    </div>
+    <div class="parts">
+      <details class="part" open>
+        <summary><span class="rn">Ⅰ</span><span><span class="pt">AX 컨설팅 개론</span><div class="pd"><span class="mono">Day1–Day3</span> · 6강 + 특강 · 무엇을, 왜, 어떻게 롱런하는가</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">Day1</span><span class="t"><b>1강 AX란 무엇인가</b> — DX를 넘어(보여주기 vs 판단·실행) · <b>2강 시장과 비즈니스 모델</b> — 고객 유형·수익 모델·단가</span></li>
+          <li><span class="ln">Day2</span><span class="t"><b>3강 정체성과 역량 모델</b> — 역할·역량 8종·자가진단 · <b>4강 프로젝트 전체 여정</b> — 리드→확장 A-to-Z</span></li>
+          <li><span class="ln">Day3</span><span class="t"><b>5강 리스크·윤리·거버넌스</b> — 보안·환각·HITL · <b>6강 롱런 전략</b> — 레퍼런스·자산화·브랜딩 · <b>특강 왜 AX ERP인가</b></span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">특강</span><span><span class="pt">왜 AX ERP인가 — 차별화</span><div class="pd"><span class="mono">Day3</span> · 이해(온톨로지)·판단(에이전틱)·소유(자산화)</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">개념</span><span class="t"><b>차별화 3축</b> + 기존 ERP vs AX ERP 비교</span></li>
+          <li><span class="ln">방법</span><span class="t"><b>딥트윈 8단계 + AX Platform</b>이 만드는 차이</span></li>
+          <li><span class="ln">실습</span><span class="t">고객 현황·TCO 비교·<b>자산화 제안 One-Pager</b></span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">Ⅱ</span><span><span class="pt">AX 컨설팅 실전 A-Z</span><div class="pd"><span class="mono">Day4–Day7</span> · 10강 + 캡스톤 · 고객 앞에서 실제로 하는 모든 것</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">Day4</span><span class="t"><b>1–3강 발굴·상담·진단 + 쓰레드 진단</b> — ICP·SPIN·3축 진단·단절점 값 매기기 <span class="fine">→ 현황 진단서·쓰레드 맵</span></span></li>
+          <li><span class="ln">Day5</span><span class="t"><b>4–6강 문제·제안·세일즈</b> — 5Whys·ROI 2×2·반론 처리 <span class="fine">→ 제안서 1부</span></span></li>
+          <li><span class="ln">Day6</span><span class="t"><b>7–9강 계약·챔피언·수행</b> — SOW·이해관계자 맵·3중 게이트 <span class="fine">→ SOW·리스크 로그</span></span></li>
+          <li><span class="ln">Day7</span><span class="t"><b>10강 마무리·확장 + 실전 종합 캡스톤</b> — 레퍼런스화·리테이너 전환 <span class="fine">→ 최종 보고서</span></span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">Ⅲ</span><span><span class="pt">딥트윈 에이전틱 구축</span><div class="pd"><span class="mono">Day8–Day10</span> · 8단계 · 각 STEP = 납품물</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">Day8</span><span class="t"><b>STEP 0–3 디지털 쓰레드·환경·온톨로지·데이터</b> — 하네스·랄프 루프 / T-Box·A-Box·용어 사전 / 원천·정제·저장</span></li>
+          <li><span class="ln">Day9</span><span class="t"><b>STEP 4–6 트윈·에이전트·RAG</b> — 상태·이벤트·KPI·SSOT / HITL·가드레일·롤백 / 출처 표시·GraphRAG</span></li>
+          <li><span class="ln">Day10</span><span class="t"><b>STEP 7–8 통합·검증배포 + 최종 캡스톤</b> — OAuth·라이브러리화 / 3중 게이트·Runbook · 데뷔 준비</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">Ⅳ</span><span><span class="pt">실전 무상 프로젝트</span><div class="pd">10일 필드 · 실제 고객과 진단→구축→보고</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">D1</span><span class="t"><b>매칭·킥오프·범위 합의</b> — 프로젝트 헌장·일정</span></li>
+          <li><span class="ln">D2–3</span><span class="t"><b>현황 진단</b>(업무·데이터·시스템 3축) — 진단서</span></li>
+          <li><span class="ln">D4</span><span class="t"><b>문제 정의·우선순위·North Star</b> — 기회 정의서</span></li>
+          <li><span class="ln">D5–7</span><span class="t"><b>딥트윈 구축</b>(STEP 2–7 압축 적용) — 동작 프로토타입</span></li>
+          <li><span class="ln">D8–9</span><span class="t"><b>검증·보정(3중 게이트)·리허설</b> — 검증 리포트</span></li>
+          <li><span class="ln">D10</span><span class="t"><b>고객 최종 보고</b> — 최종 보고서·확장 제안</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">Ⅴ</span><span><span class="pt">AX 해커톤 &amp; 데뷔</span><div class="pd">1박 2일 합숙 · 실력의 증명</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">진행</span><span class="t"><b>문제 발제 → 딥트윈 설계 → 구축(하네스·루프) → 발표·심사 → 시상</b></span></li>
+          <li><span class="ln">심사</span><span class="t"><b>문제정의 · 구축 완성도 · 고객가치 · 발표</b> 4개 축</span></li>
+          <li><span class="ln">피날레</span><span class="t"><b>AX 컨설턴트 데뷔 인증</b> 수여 + 동문 네트워크 편입</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">부록</span><span><span class="pt">수익·템플릿·평가 기준</span><div class="pd">정직판 가이드와 산출물 템플릿 팩</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">A</span><span class="t"><b>수익·계약 가이드(정직판)</b> — 단가 레인지·계약 형태별 장단·무상→유상 전환·세금</span></li>
+          <li><span class="ln">B</span><span class="t"><b>산출물 템플릿 팩</b> — 콜드메시지·상담대본·진단서·제안서·표준계약서·검증리포트·최종보고서</span></li>
+          <li><span class="ln">C</span><span class="t"><b>도구 스택</b> — Claude Code·Codex·Antigravity · 온톨로지·RAG · AX-platform</span></li>
+          <li><span class="ln">D</span><span class="t"><b>평가·수료 기준</b> — 퀴즈 + STEP 1–8 납품물 + 최종 보고 + 해커톤 완주 → 데뷔 인증</span></li>
+        </ol></div>
+      </details>
+    </div>
+    <div class="currmore">
+      <a href="curriculum.html" class="btn btn-primary sm">커리큘럼 전문 보기</a>
+      <a href="courses.html" class="btn btn-line sm">자매 과정 비교 (챔피언 · 창업)</a>
+    </div>
+  </div>
+</section>
+
+<!-- FIELD + HACK -->
+<section>
+  <div class="wrap">
+    <div class="head"><div class="eyebrow"><span class="no">06</span> 실전과 피날레</div>
+      <h2>배운 것을 실제 고객에게, 그리고 무대 위에서</h2></div>
+    <div class="two">
+      <div class="big">
+        <div class="l">10일 필드 프로젝트</div><h3>실전 무상 프로젝트</h3>
+        <p>실제 고객과 10일. 고객은 시간·데이터·리스크를 부담하고, 여러분은 실전 경험을 얻습니다. 기업 매칭은 주최측이 수급합니다.</p>
+        <ul><li>D1 킥오프 · D2–3 진단 · D4 기회 정의</li><li>D5–7 딥트윈 구축 · D8 검증 · D9–10 최종 보고</li><li>우수 시 유상·리테이너 전환 + 매일 코칭</li></ul>
+      </div>
+      <div class="big acc">
+        <div class="l">1박 2일 해커톤</div><h3>AX 해커톤 &amp; 데뷔</h3>
+        <p>11–12일차, 1박2일 합숙. 실전 감각을 응축한 문제로 딥트윈을 설계·구축하고 발표·심사로 피날레를 장식합니다.</p>
+        <ul><li>문제 발제 → 설계 → 구축 → 발표</li><li>심사: 문제정의·완성도·고객가치</li><li>수료 = 데뷔 인증 + 동문 네트워크</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 과정 ② 기업 AX 챔피언 ================= -->
+<section id="champion" class="band c2">
+  <div class="wrap">
+    <div class="clead c2">
+      <span class="ctag">과정 ②</span>
+      <div>
+        <h2>기업 AX 챔피언 과정</h2>
+        <p class="one">담당자가 바뀌면 사라지던 판단 기준을 대시보드·자동화·에이전트·운영 문서라는
+          회사 자산으로. 사내 챔피언을 길러 전사 내재화까지 이어갑니다.</p>
+        <div class="meta">
+          <span class="chip">대상 · 사내 실무자(임직원)</span>
+          <span class="chip">5일 집합 · 8주 운영</span>
+          <span class="chip">강의안 약 719장 (CDay1~5)</span>
+          <span class="chip">교재 약 469p</span>
+          <span class="chip">강별 실습데이터</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="parts" style="margin-top:36px">
+      <details class="part" open>
+        <summary><span class="rn">1</span><span><span class="pt">리더십 &amp; 조직 정렬</span><div class="pd"><span class="mono">CDay1</span> · 챔피언의 토대</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M1</span><span class="t"><b>왜 기업에 AX 챔피언인가</b> — 외부 의존의 한계와 내재화</span></li>
+          <li><span class="ln">M2</span><span class="t"><b>챔피언의 역할과 변화관리</b> — 코터·ADKAR, 저항은 정보다</span></li>
+          <li><span class="ln">M3</span><span class="t"><b>AX 핵심 개념</b> — 조직 눈높이로 설명하는 법</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">2</span><span><span class="pt">부서 진단 &amp; 유스케이스 발굴</span><div class="pd"><span class="mono">CDay2</span> · 스프린트 ①</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M4</span><span class="t"><b>부서 업무·데이터·시스템 3축 진단</b></span></li>
+          <li><span class="ln">M5</span><span class="t"><b>유스케이스 발굴과 우선순위</b> — 반복형/판단형/관계형 분해</span></li>
+          <li><span class="ln">M6</span><span class="t"><b>데이터·보안 사전 점검</b></span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">3</span><span><span class="pt">환경 · 온톨로지 · 에이전트</span><div class="pd"><span class="mono">CDay3</span> · 파일럿 구축(딥트윈 축약)</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M7</span><span class="t"><b>환경설정 &amp; 성공기준(하네스)</b></span></li>
+          <li><span class="ln">M8</span><span class="t"><b>온톨로지 &amp; 데이터 파이프라인</b></span></li>
+          <li><span class="ln">M9</span><span class="t"><b>에이전트 &amp; 자동화 (HITL)</b></span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">4</span><span><span class="pt">통합 · 검증배포 · 확산</span><div class="pd"><span class="mono">CDay4</span> · 스프린트 ②~③</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M10</span><span class="t"><b>통합 · 회원/권한 &amp; RAG</b></span></li>
+          <li><span class="ln">M11</span><span class="t"><b>검증 · 배포 · 운영</b></span></li>
+          <li><span class="ln">M12</span><span class="t"><b>확산 전략</b> — Land &amp; Expand</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">5</span><span><span class="pt">거버넌스 · 성과관리 · 발표</span><div class="pd"><span class="mono">CDay5</span> · 마무리</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M13</span><span class="t"><b>AX 거버넌스</b></span></li>
+          <li><span class="ln">M14</span><span class="t"><b>성과관리 &amp; ROI</b></span></li>
+          <li><span class="ln">M15</span><span class="t"><b>[팀 프로젝트] 부서 AX 실행 청사진 발표</b> · 시상</span></li>
+        </ol></div>
+      </details>
+    </div>
+
+    <div class="outs">
+      <div class="o"><div class="t">산출물 01</div><p>내 업무 자동화 지도 1장</p></div>
+      <div class="o"><div class="t">산출물 02</div><p>대시보드 1개</p></div>
+      <div class="o"><div class="t">산출물 03</div><p>자동화 / 에이전트</p></div>
+      <div class="o"><div class="t">산출물 04</div><p>부서 AX 실행 청사진 1부</p></div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:26px">
+      <a href="#apply" class="btn btn-primary sm" data-apply data-course="champion">지원하기</a>
+      <a href="champion.html" class="btn btn-line sm">기업 도입 상세 · 8주 편성</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 과정 ③ 프로덕트 창업 ================= -->
+<section id="product" class="c3">
+  <div class="wrap">
+    <div class="clead c3">
+      <span class="ctag">과정 ③</span>
+      <div>
+        <h2>프로덕트 창업 과정</h2>
+        <p class="one">대부분의 실패는 “만들 줄 몰라서”가 아니라 “아무도 원하지 않는 것을 만들어서”. 검증을 먼저 하고,
+          바이브코딩·랄프 루프로 만들어 회원가입·결제까지 붙여 실제로 배포합니다.</p>
+        <div class="meta">
+          <span class="chip">대상 · 예비/1인 창업자</span>
+          <span class="chip">5일 · 8주</span>
+          <span class="chip">강의안 약 643장 (PDay1~5)</span>
+          <span class="chip">교재 약 459p</span>
+          <span class="chip">강별 실습데이터</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="parts" style="margin-top:36px">
+      <details class="part" open>
+        <summary><span class="rn">1</span><span><span class="pt">아이디어 &amp; 시장 검증</span><div class="pd"><span class="mono">PDay1</span> · 만들기 전에 팔릴지부터</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M1</span><span class="t"><b>창업 마인드셋 &amp; 문제 발견</b> — 내 아이디어가 아니라 남의 불편에서</span></li>
+          <li><span class="ln">M2</span><span class="t"><b>시장·경쟁·차별점</b> — 차별점을 한 문장으로</span></li>
+          <li><span class="ln">M3</span><span class="t"><b>검증 — 스모크 테스트</b> — 만들기 전에 수요 확인</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">2</span><span><span class="pt">MVP &amp; 바이브코딩</span><div class="pd"><span class="mono">PDay2</span> · 성공기준부터 적고 구현</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M4</span><span class="t"><b>MVP 범위 &amp; 성공기준(하네스)</b></span></li>
+          <li><span class="ln">M5</span><span class="t"><b>바이브코딩 구축 — 랄프 루프</b></span></li>
+          <li><span class="ln">M6</span><span class="t"><b>회원가입 · 간편인증</b> — 로그인·OAuth·세션·비밀관리</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">3</span><span><span class="pt">데이터/자동화 · 결제 · 검증배포</span><div class="pd"><span class="mono">PDay3</span> · 한 사이클 완성</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M7</span><span class="t"><b>데이터 · 자동화 · (선택) 에이전트</b></span></li>
+          <li><span class="ln">M8</span><span class="t"><b>결제 &amp; 수익 경로</b></span></li>
+          <li><span class="ln">M9</span><span class="t"><b>검증 · 배포</b> — 로컬을 넘어 남에게 보여주기</span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">4</span><span><span class="pt">런칭 · 그로스 · 가격</span><div class="pd"><span class="mono">PDay4</span> · 초기 사용자 확보</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M10</span><span class="t"><b>런칭 킷</b> — 소개 페이지·온보딩·초기 사용자 확보</span></li>
+          <li><span class="ln">M11</span><span class="t"><b>그로스 &amp; 리텐션</b></span></li>
+          <li><span class="ln">M12</span><span class="t"><b>가격 &amp; 단위경제</b></span></li>
+        </ol></div>
+      </details>
+      <details class="part">
+        <summary><span class="rn">5</span><span><span class="pt">자동화 · 스케일 · 데모데이</span><div class="pd"><span class="mono">PDay5</span> · 1인 운영과 마무리</div></span><span class="pl">+</span></summary>
+        <div class="body"><ol>
+          <li><span class="ln">M13</span><span class="t"><b>자동화 스택 &amp; 1인 운영</b></span></li>
+          <li><span class="ln">M14</span><span class="t"><b>스케일 · 법인 · 투자(선택)</b></span></li>
+          <li><span class="ln">M15</span><span class="t"><b>[최종] 데모데이</b> — 프로덕트·수익 계획 발표</span></li>
+        </ol></div>
+      </details>
+    </div>
+
+    <div class="outs">
+      <div class="o"><div class="t">산출물 01</div><p>검증 리포트(스모크 테스트)</p></div>
+      <div class="o"><div class="t">산출물 02</div><p>배포된 MVP (로그인·결제)</p></div>
+      <div class="o"><div class="t">산출물 03</div><p>런칭 킷</p></div>
+      <div class="o"><div class="t">산출물 04</div><p>데모데이 발표</p></div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:26px">
+      <a href="#apply" class="btn btn-primary sm" data-apply data-course="product">지원하기</a>
+      <a href="startup.html" class="btn btn-line sm">프로덕트 창업 상세</a>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALS : 학습 자료 (교재·부록) -->
+<section id="materials" class="band">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">07</span> 학습 자료 · 교재와 부록</div>
+      <h2>손에 쥐고 따라할 자료가 실제로 있습니다</h2>
+      <p>세 과정 모두 일자별 교재(docx)와 하루 100장+ 강의안(pptx), 강별 실습 데이터셋, 연속 따라하기 실습으로 구성됩니다.
+        아래는 각 과정에 실제로 준비된 자료입니다. <b style="color:var(--text)">개별 다운로드는 준비 중</b>이라, 지금은 자료 구성만 소개합니다.</p>
+    </div>
+    <div class="matwrap">
+
+      <!-- 공통 -->
+      <div class="matgrp reveal">
+        <div class="gh"><span class="gk">Common</span><span class="gt">세 과정 공통 구성</span></div>
+        <div class="gd">목표는 달라도 만드는 방식은 같습니다 — 모든 과정이 동일한 네 가지 축으로 만들어집니다.</div>
+        <div class="matlist">
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>일자별 교재</b><span>Day별 서술형 교재. 강의 순서 그대로 읽고 따라할 수 있습니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">PPTX</span><div class="mb"><b>강의안 (하루 100장+)</b><span>Day별 슬라이드로 개념·예시·실습·결과 화면을 촘촘히 연결합니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">CSV</span><div class="mb"><b>강별 실습 데이터셋</b><span>강의마다 실제 CSV·템플릿이 Day별 폴더로 함께 제공됩니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">FLOW</span><div class="mb"><b>연속 따라하기 실습</b><span>앞 강의의 산출물이 다음 강의의 입력이 되어 하나의 프로젝트로 이어집니다.</span></div><span class="badge">제공 예정</span></div>
+        </div>
+      </div>
+
+      <!-- 컨설턴트 -->
+      <div class="matgrp reveal">
+        <div class="gh"><span class="gk">Track ① · Consultant</span><span class="gt">AX 컨설턴트 양성 과정</span></div>
+        <div class="gd">Day1~10 교재·강의안, 강별 실습데이터에 더해 실무를 위한 자료가 함께 준비됩니다.</div>
+        <div class="matlist">
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>사례집</b><span>발굴·진단·제안·구축·데뷔까지 실전 흐름을 사례로 정리했습니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>평가 문제은행</b><span>Day별 개념·실습을 점검하는 문항 모음. 수료 평가에 활용됩니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>강사 가이드</b><span>운영자가 강의를 진행할 수 있도록 흐름·시간 배분·유의점을 담았습니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>부록 실무 템플릿 워크북</b><span>상담대본·진단서·제안서·SOW·검증리포트 등 산출물 템플릿 팩.</span></div><span class="badge">제공 예정</span></div>
+        </div>
+      </div>
+
+      <!-- 챔피언 -->
+      <div class="matgrp g2 reveal">
+        <div class="gh"><span class="gk">Track ② · Champion</span><span class="gt">기업 AX 챔피언 과정</span></div>
+        <div class="gd">CDay1~5 교재·강의안, 강별 실습데이터에 더해 운영·평가 자료가 함께 준비됩니다.</div>
+        <div class="matlist">
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>사례집</b><span>부서 진단부터 실행 청사진 발표까지, 사내 내재화 사례를 정리했습니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>평가 문제은행</b><span>CDay별 학습 목표를 점검하는 문항 모음.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>강사 가이드</b><span>5일 집합 · 8주 운영을 진행하기 위한 운영자용 가이드.</span></div><span class="badge">제공 예정</span></div>
+        </div>
+      </div>
+
+      <!-- 프로덕트 -->
+      <div class="matgrp g3 reveal">
+        <div class="gh"><span class="gk">Track ③ · Product</span><span class="gt">프로덕트 창업 과정</span></div>
+        <div class="gd">PDay1~5 교재·강의안, 강별 실습데이터에 더해 창업 실무 자료가 함께 준비됩니다.</div>
+        <div class="matlist">
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>사례집</b><span>아이디어 검증부터 배포·데모데이까지, 1인 창업 사례를 정리했습니다.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>평가 문제은행</b><span>PDay별 핵심 개념·실습을 점검하는 문항 모음.</span></div><span class="badge">제공 예정</span></div>
+          <div class="matcard"><span class="mt">DOCX</span><div class="mb"><b>강사 가이드</b><span>5일 · 8주 과정을 진행하기 위한 운영자용 가이드.</span></div><span class="badge">제공 예정</span></div>
+        </div>
+      </div>
+
+    </div>
+    <p class="matnote">※ 위 자료는 실제 제작·보관 중인 파일 구성입니다. 개별 다운로드 링크는 기수 개설 시 수강생에게 제공되며,
+      사전 열람이 필요하시면 <a href="#apply" data-apply style="color:var(--accent);font-weight:700">문의</a>해 주세요.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="apply">
+  <div class="wrap">
+    <div class="cta">
+      <div class="eyebrow" style="color:#cfe0ff;justify-content:center">모두다 AX 아카데미 · 1기 알파 모집</div>
+      <h2 style="margin-top:14px">듣기만 하는 교육은, <span class="a">여기 없습니다.</span></h2>
+      <p>세 과정 모두 인터뷰로 선발합니다. 지원 시 관심 과정을 선택해 주세요.</p>
+      <div class="tline">
+        <div class="tc"><div class="d">과정 ①</div><div class="t">AX 컨설턴트</div></div>
+        <div class="tc"><div class="d">과정 ②</div><div class="t">기업 AX 챔피언</div></div>
+        <div class="tc"><div class="d">과정 ③</div><div class="t">프로덕트 창업</div></div>
+      </div>
+      <div class="row">
+        <a href="#apply" class="btn btn-white" data-apply>지원서 작성하기</a>
+        <a href="#programs" class="btn btn-dim">3개 과정 다시 보기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <span class="m"><svg width="18" height="18" viewBox="0 0 20 20"><circle cx="4" cy="6" r="2.3" fill="#fff"/><circle cx="15.5" cy="4.5" r="2.3" fill="#fff"/><circle cx="12" cy="15.5" r="2.3" fill="#fff"/><path d="M4 6 15.5 4.5M15.5 4.5 12 15.5M4 6l8 9.5" stroke="#fff" stroke-width="1.4" fill="none" opacity=".85"/></svg></span>
+      <div>모두다 · MODE-DA<small>AX 아카데미 · 3개 과정</small></div>
+    </div>
+    <p class="fine">AX 컨설턴트 · 기업 AX 챔피언 · 프로덕트 창업 세 과정을 운영하는 모두다 AX 아카데미.
+      세 과정 모두 하루 100장+ 강의안과 강별 실습데이터, 앞 산출물이 다음 입력이 되는 연속 따라하기로 진행합니다.
+      일정·정원·구성은 기수 사정에 따라 변동될 수 있습니다.</p>
+    <p class="fine"><a href="privacy.html">개인정보처리방침</a> · <a href="terms.html">이용약관</a> · 운영 주체 — 사업자 등록 준비 중</p>
+  </div>
+</footer>
+
+<!-- APPLY MODAL -->
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="mtitle">
+  <div class="modal" id="modal">
+    <button class="x" id="mx" aria-label="닫기">✕</button>
+    <div id="mform">
+      <h3 id="mtitle">1기 알파 지원하기</h3>
+      <p class="lead">현재 <b>1기 알파 모집 중</b>입니다(수시 접수). AX 컨설턴트 과정은 인터뷰 선발제이며,
+      기수 시작일은 접수 후 개별 안내드립니다.</p>
+      <div class="fld"><label>관심 과정 <span class="req">*</span></label>
+        <select id="i-course">
+          <option>AX 컨설턴트 양성 과정</option>
+          <option>기업 AX 챔피언 과정</option>
+          <option>프로덕트 창업 과정</option>
+        </select></div>
+      <div class="fld" id="f-name"><label>이름 <span class="req">*</span></label>
+        <input type="text" id="i-name" placeholder="홍길동" autocomplete="name"><div class="err">이름을 입력해 주세요.</div></div>
+      <div class="fld" id="f-contact"><label>이메일 또는 연락처 <span class="req">*</span></label>
+        <input type="text" id="i-contact" placeholder="you@email.com / 010-0000-0000"><div class="err">연락 가능한 이메일 또는 전화번호를 입력해 주세요.</div></div>
+      <div class="fld"><label>현재 상태</label>
+        <select id="i-role">
+          <option>예비 창업·1인 지식창업</option><option>현업 IT·개발</option>
+          <option>기획·컨설팅</option><option>학생·취업준비</option><option>기타</option>
+        </select></div>
+      <div class="fld"><label>한 줄 지원 동기 (선택)</label>
+        <textarea id="i-motiv" placeholder="왜 이 과정에 지원하시나요?"></textarea></div>
+      <button class="btn btn-primary submit" id="msubmit">지원 접수하기</button>
+      <p class="fine">제출 시 개인정보는 선발 안내 목적에만 사용됩니다.</p>
+    </div>
+    <div class="done" id="mdone" style="display:none">
+      <div class="ic">✉</div>
+      <h3>메일로 보내 주세요</h3>
+      <p>이 사이트에는 아직 전송 기능이 연결돼 있지 않습니다. 아래 내용을 그대로 복사해
+        메일로 보내 주시면 접수됩니다. 입력하신 내용은 어디에도 저장되지 않았습니다.</p>
+      <div class="sum" id="msum"></div>
+      <a class="btn btn-primary submit" id="mmail" href="#">이 내용으로 메일 보내기</a>
+      <button class="btn btn-line submit" id="mclose2">닫기</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // theme toggle
+  (function(){
+    var root=document.documentElement, b=document.getElementById('tg');
+    function cur(){var t=root.getAttribute('data-theme');return t?t:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}
+    b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';root.setAttribute('data-theme',n);b.textContent=n==='dark'?'☾':'◐';});
+  })();
+  // apply modal
+  (function(){
+    var ov=document.getElementById('ov'), mx=document.getElementById('mx'),
+        form=document.getElementById('mform'), done=document.getElementById('mdone'),
+        sum=document.getElementById('msum'), submit=document.getElementById('msubmit'),
+        close2=document.getElementById('mclose2');
+    var CMAP={consultant:'AX 컨설턴트 양성 과정',champion:'기업 AX 챔피언 과정',product:'프로덕트 창업 과정'};
+    function open(e){ if(e)e.preventDefault();
+      var c=e&&e.currentTarget&&e.currentTarget.getAttribute&&e.currentTarget.getAttribute('data-course');
+      if(c&&CMAP[c]){var sel=document.getElementById('i-course'); if(sel) sel.value=CMAP[c];}
+      form.style.display='block'; done.style.display='none';
+      ov.classList.add('on'); document.body.style.overflow='hidden'; setTimeout(function(){document.getElementById('i-name').focus();},60); }
+    function close(){ ov.classList.remove('on'); document.body.style.overflow=''; }
+    document.querySelectorAll('[data-apply]').forEach(function(el){ el.addEventListener('click',open); });
+    mx.addEventListener('click',close); close2.addEventListener('click',close);
+    ov.addEventListener('click',function(e){ if(e.target===ov) close(); });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&ov.classList.contains('on')) close(); });
+    function bad(id,cond){ var f=document.getElementById(id); f.classList.toggle('bad',cond); return cond; }
+    submit.addEventListener('click',function(){
+      var name=document.getElementById('i-name').value.trim();
+      var contact=document.getElementById('i-contact').value.trim();
+      var b1=bad('f-name',!name), b2=bad('f-contact',!contact);
+      if(b1||b2) return;
+      var role=document.getElementById('i-role').value;
+      var course=document.getElementById('i-course').value;
+      var motiv=document.getElementById('i-motiv').value.trim();
+      sum.innerHTML='<b>'+name.replace(/</g,'&lt;')+'</b> · '+contact.replace(/</g,'&lt;')+'<br>'+
+        '지원 과정: <b>'+course.replace(/</g,'&lt;')+'</b><br>'+
+        role+(motiv?('<br>“'+motiv.replace(/</g,'&lt;')+'”'):'');
+      // 전송 엔드포인트가 없다. 보내지 않았으면서 "접수됐다"고 말하지 않는다 —
+      // 대신 입력한 내용을 그대로 담은 메일 링크를 만들어 준다. 죽은 버튼을 남기지 않는다.
+      // 서버가 붙으면 이 자리에서 fetch 로 바꾸고 아래 메일 링크를 지운다.
+      var body = name + ' · ' + contact + '\n지원 과정: ' + course + '\n' + role +
+                 (motiv ? ('\n\n지원 동기\n' + motiv) : '');
+      var mail = document.getElementById('mmail');
+      if (mail) {
+        mail.href = 'mailto:sangkeun.jo@gmail.com?subject=' +
+          encodeURIComponent('[모두다] ' + course + ' 지원 — ' + name) +
+          '&body=' + encodeURIComponent(body);
+      }
+      form.style.display='none'; done.style.display='block';
+    });
+  })();
+  // hero deep-twin graph (canvas)
+  (function(){
+    var c=document.getElementById('twincanvas'); if(!c) return;
+    var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var ctx=c.getContext('2d'), W,H,dpr,nodes,edges,t=0;
+    var LABELS=['온톨로지','데이터','트윈','에이전트','RAG','배포'];
+    function seed(){
+      var rnd=(function(){var s=20260727;return function(){s=(s*1103515245+12345)&0x7fffffff;return s/0x7fffffff;};})();
+      nodes=[]; var N=26;
+      for(var i=0;i<N;i++){nodes.push({x:rnd(),y:rnd(),r:2+rnd()*3.4,ph:rnd()*6.28,
+        big:i<6, lab:i<6?LABELS[i]:null, sp:.4+rnd()*.8});}
+      edges=[];
+      for(var j=0;j<N;j++){for(var k=j+1;k<N;k++){
+        var dx=nodes[j].x-nodes[k].x, dy=nodes[j].y-nodes[k].y;
+        if(dx*dx+dy*dy<0.045) edges.push([j,k]);
+      }}
+    }
+    function size(){dpr=Math.min(2,window.devicePixelRatio||1);W=c.clientWidth;H=c.clientHeight;
+      c.width=W*dpr;c.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
+    function px(n){return (0.30+n.x*0.72)*W;} function py(n){return (0.12+n.y*0.82)*H;}
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+      for(var e=0;e<edges.length;e++){var a=nodes[edges[e][0]],b2=nodes[edges[e][1]];
+        var ax=px(a),ay=py(a),bx=px(b2),by=py(b2);
+        var g=ctx.createLinearGradient(ax,ay,bx,by);
+        g.addColorStop(0,'rgba(90,150,255,.05)');g.addColorStop(.5,'rgba(90,150,255,.20)');g.addColorStop(1,'rgba(90,150,255,.05)');
+        ctx.strokeStyle=g;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(ax,ay);ctx.lineTo(bx,by);ctx.stroke();}
+      for(var i=0;i<nodes.length;i++){var n=nodes[i];var x=px(n),y=py(n);
+        var pulse=reduce?1:(0.7+0.3*Math.sin(t*0.001*n.sp+n.ph));
+        if(n.big){
+          ctx.fillStyle='rgba(245,165,36,'+(0.85*pulse)+')';
+          ctx.shadowColor='rgba(245,165,36,.7)';ctx.shadowBlur=14;
+          ctx.beginPath();ctx.arc(x,y,n.r+1.6,0,6.2832);ctx.fill();ctx.shadowBlur=0;
+          ctx.fillStyle='rgba(200,215,240,.82)';ctx.font='600 12px Pretendard, sans-serif';
+          ctx.fillText(n.lab,x+9,y+4);
+        }else{
+          ctx.fillStyle='rgba(120,170,255,'+(0.5*pulse+0.2)+')';
+          ctx.shadowColor='rgba(70,140,255,.6)';ctx.shadowBlur=8;
+          ctx.beginPath();ctx.arc(x,y,n.r,0,6.2832);ctx.fill();ctx.shadowBlur=0;
+        }
+      }
+    }
+    function loop(ts){t=ts||0;draw();if(!reduce)requestAnimationFrame(loop);}
+    seed();size();draw();if(!reduce)requestAnimationFrame(loop);
+    window.addEventListener('resize',function(){size();draw();});
+  })();
+  // 섹션 진입 페이드 (IntersectionObserver)
+  (function(){
+    var els=document.querySelectorAll('.reveal'); if(!els.length) return;
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)){
+      els.forEach(function(el){el.classList.add('in');}); return;
+    }
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+<script src="assets/site.js" defer></script>
+<script src="assets/nav.js" defer></script>
+</body>
+</html>

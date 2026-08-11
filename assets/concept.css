@@ -1,0 +1,99 @@
+/* MODE-DA 개념 페이지 전용 스타일 — site.css 토큰 위에만 얹는다(토큰 재정의 금지). */
+
+/* 다크 히어로 */
+.chero{background:linear-gradient(160deg,#0C1220 0%,#141F35 52%,#1B2B48 100%);color:#fff;padding:96px 0 88px;
+  position:relative;overflow:hidden}
+.chero::after{content:"";position:absolute;inset:auto -10% -40% 40%;height:420px;
+  background:radial-gradient(closest-side,rgba(76,151,255,.28),transparent 70%);pointer-events:none}
+.chero .wrap{position:relative;z-index:1}
+.chero .k{display:inline-block;font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.14em;
+  color:#8FB6FF;border:1px solid rgba(143,182,255,.34);border-radius:var(--r-chip);padding:7px 15px}
+.chero h1{font-size:clamp(34px,5.1vw,58px);margin-top:22px;color:#fff}
+.chero .sub{margin-top:20px;font-size:clamp(16px,1.9vw,19.5px);color:#B8C7E0;max-width:800px;line-height:1.62}
+.chero .row{display:flex;gap:11px;flex-wrap:wrap;margin-top:32px}
+.chero .stats{display:flex;gap:38px;flex-wrap:wrap;margin-top:44px;padding-top:30px;
+  border-top:1px solid rgba(255,255,255,.13)}
+.chero .stats div .n{font-family:var(--mono);font-size:27px;font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
+.chero .stats div .l{font-size:13px;color:#93A5C2;margin-top:5px;font-weight:600}
+
+/* 기둥 카드 — 번호가 큰 형태 */
+.pillars{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));margin-top:34px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px 26px 28px;
+  box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
+.pillar .no{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--warm);letter-spacing:.08em}
+.pillar h3{font-size:20px;margin-top:12px}
+.pillar p{font-size:14.5px;color:var(--text2);margin-top:11px;line-height:1.62}
+.pillar .src{margin-top:16px;padding-top:13px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--text3);
+  font-family:var(--mono)}
+
+/* 디지털 쓰레드 — 가로 흐름 */
+.thread{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;background:var(--surface)}
+.thread .n{flex:1 1 150px;padding:22px 18px;border-right:1px solid var(--line);position:relative}
+.thread .n:last-child{border-right:0}
+.thread .n .s{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--accent);letter-spacing:.06em}
+.thread .n h4{font-size:15px;margin-top:9px}
+.thread .n p{font-size:12.5px;color:var(--text3);margin-top:6px;font-weight:500;line-height:1.55}
+.thread .n.cut{background:var(--accent-weak)}
+.thread .n.cut .s{color:var(--red)}
+
+/* 온톨로지 8모듈 */
+.mods{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));margin-top:26px}
+.mod{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:17px 16px}
+.mod .c{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--accent)}
+.mod h4{font-size:15px;margin-top:7px}
+.mod p{font-size:12.5px;color:var(--text3);margin-top:5px;font-weight:500;line-height:1.5}
+
+/* 단계 플로우(세로) */
+.phases{margin-top:28px;border-left:2px solid var(--line);padding-left:0}
+.phase{position:relative;padding:0 0 26px 30px}
+.phase::before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.phase .t{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--warm);letter-spacing:.06em}
+.phase h4{font-size:17.5px;margin-top:7px}
+.phase p{font-size:14.5px;color:var(--text2);margin-top:8px;line-height:1.62}
+.phase ul{margin:10px 0 0;padding-left:19px}
+.phase li{font-size:13.5px;color:var(--text3);margin-top:4px;font-weight:500}
+
+/* 조직(에이전트) */
+.org{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(186px,1fr));margin-top:24px}
+.ag{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 15px;
+  display:flex;gap:11px;align-items:flex-start}
+.ag .e{font-size:19px;line-height:1.2}
+.ag b{font-size:14px;display:block}
+.ag span{font-size:12.5px;color:var(--text3);font-weight:500;display:block;margin-top:3px;line-height:1.5}
+
+/* 게이트 */
+.gates{margin-top:24px;display:grid;gap:12px}
+.gate3{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);
+  border-left:4px solid var(--accent);border-radius:var(--r-sm);padding:17px 19px}
+.gate3.mid{border-left-color:var(--warm)} .gate3.hi{border-left-color:var(--red)}
+.gate3 .lv{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--text3);min-width:74px;padding-top:2px}
+.gate3 b{font-size:15px} .gate3 p{font-size:13.5px;color:var(--text2);margin-top:5px;line-height:1.6}
+
+/* 증거 카드 */
+.proofs{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));margin-top:28px}
+.proof{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;
+  box-shadow:var(--shadow-sm)}
+.proof .k{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.05em}
+.proof h4{font-size:17px;margin-top:10px}
+.proof p{font-size:13.8px;color:var(--text2);margin-top:9px;line-height:1.62}
+.proof .m{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--text3);
+  font-family:var(--mono)}
+
+/* 대비표 */
+.vs{display:grid;gap:0;grid-template-columns:1fr 1fr;margin-top:26px;border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden}
+.vs > div{padding:24px 22px}
+.vs .a{background:var(--surface);border-right:1px solid var(--line)}
+.vs .b{background:var(--accent-weak)}
+.vs h4{font-size:16px} .vs ul{margin:13px 0 0;padding-left:19px}
+.vs li{font-size:14px;color:var(--text2);margin-top:7px;line-height:1.55}
+@media(max-width:720px){.vs{grid-template-columns:1fr}.vs .a{border-right:0;border-bottom:1px solid var(--line)}}
+
+/* CTA 밴드 */
+.cta{background:linear-gradient(135deg,#111A2B,#1D3054);color:#fff;border-radius:var(--r);padding:44px 40px;
+  margin-top:56px;display:flex;gap:26px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cta h3{font-size:25px;color:#fff} .cta p{font-size:15px;color:#B8C7E0;margin-top:9px;max-width:560px;line-height:1.6}
+.cta .row{display:flex;gap:11px;flex-wrap:wrap}
+@media(max-width:760px){.cta{padding:34px 26px}}

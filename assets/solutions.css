@@ -1,0 +1,76 @@
+/* 솔루션 페이지 전용 스타일 — site.css 토큰 위에만 얹는다(토큰 재정의 금지). */
+
+/* 솔루션 줄 목록 — 홈 섹션에서 여섯 개를 한눈에 훑게 한다 */
+.solrows{margin-top:30px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.solrow{display:grid;grid-template-columns:56px minmax(180px,1.1fr) 2fr 26px;gap:18px;align-items:center;
+  padding:19px 22px;border-bottom:1px solid var(--line);color:inherit;transition:background .14s}
+.solrow:last-child{border-bottom:0}
+.solrow:hover,.solrow:focus-visible{background:var(--accent-weak)}
+.solrow:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.solrow .c{font-family:var(--mono);font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.05em}
+.solrow h3{font-size:17px;letter-spacing:-.03em}
+.solrow .en{font-family:var(--mono);font-size:11.5px;color:var(--text3);margin-top:4px;letter-spacing:.02em}
+.solrow .d{font-size:14.5px;color:var(--text2);font-weight:500;line-height:1.55}
+.solrow .a{color:var(--text3);font-size:15px;text-align:right;transition:transform .14s,color .14s}
+.solrow:hover .a{transform:translateX(3px);color:var(--accent)}
+@media(max-width:760px){
+  .solrow{grid-template-columns:52px 1fr;gap:6px 14px;padding:17px 18px}
+  .solrow .d{grid-column:2}
+  .solrow .a{display:none}
+}
+
+/* 솔루션 카드 — 목록 페이지와 상세 하단의 '함께 보면 좋은 것' */
+.solcards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));margin-top:34px}
+.solcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;
+  box-shadow:var(--shadow-sm);color:inherit;display:flex;flex-direction:column;
+  transition:transform .14s,box-shadow .14s,border-color .14s}
+.solcard:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--accent)}
+.solcard:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.solcard .c{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.06em}
+.solcard h3{font-size:19px;margin-top:11px}
+.solcard .en{font-family:var(--mono);font-size:11.5px;color:var(--text3);margin-top:5px;letter-spacing:.02em}
+.solcard p{font-size:14.5px;color:var(--text2);margin-top:12px;line-height:1.6;font-weight:500;flex:1}
+.solcard .go{margin-top:18px;font-size:13.5px;font-weight:700;color:var(--accent)}
+
+/* 상세 — 무엇을 하나 */
+.doing{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:10px}
+.doing li{display:flex;gap:15px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r-sm);padding:16px 18px}
+.doing .i{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--warm);padding-top:3px;min-width:22px}
+.doing span:last-child{font-size:15px;color:var(--text2);font-weight:500;line-height:1.6}
+
+/* 상세 — 실증 */
+.evid{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:var(--r-sm);padding:22px 24px;margin-top:28px}
+.evid .k{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.06em}
+.evid p{font-size:15px;color:var(--text2);margin-top:10px;line-height:1.66;font-weight:500}
+.evid code{font-family:var(--mono);font-size:13px;background:var(--accent-weak);color:var(--accent);
+  padding:2px 6px;border-radius:6px}
+
+/* 근거 수치 — 값 옆에 세어 본 파일 경로를 같이 적는다 */
+.mlist{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:22px;
+  border-top:1px solid var(--line)}
+.mlist .mi{padding:18px 4px;border-bottom:1px solid var(--line)}
+.mlist .mi:nth-child(odd){padding-right:22px}
+.mlist .v{font-family:var(--mono);font-size:26px;font-weight:800;color:var(--text);font-variant-numeric:tabular-nums;
+  letter-spacing:-.02em}
+.mlist .v .u{font-size:14px;margin-left:3px;color:var(--text3)}
+.mlist .k{font-size:14px;font-weight:700;color:var(--text2);margin-top:5px}
+.mlist .s{font-family:var(--mono);font-size:11.5px;color:var(--text3);margin-top:5px;word-break:break-all}
+@media(max-width:700px){.mlist{grid-template-columns:1fr}.mlist .mi:nth-child(odd){padding-right:4px}}
+
+/* 이전 / 다음 */
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:38px}
+.pager a{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:16px 19px;
+  color:inherit;transition:border-color .14s}
+.pager a:hover{border-color:var(--accent)}
+.pager a.n{text-align:right}
+.pager .k{font-family:var(--mono);font-size:11.5px;font-weight:800;color:var(--text3);letter-spacing:.06em}
+.pager .v{font-size:15px;font-weight:700;margin-top:6px}
+@media(max-width:600px){.pager{grid-template-columns:1fr}.pager a.n{text-align:left}}
+
+/* 사례 자리 — 아직 공개할 수 있는 사례가 없다는 것을 그대로 적는다 */
+.holder{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:38px 32px;
+  margin-top:30px}
+.holder h3{font-size:19px}
+.holder p{font-size:15px;color:var(--text2);margin-top:11px;line-height:1.66;font-weight:500;max-width:64ch}

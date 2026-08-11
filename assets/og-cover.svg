@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="모두다 MODE-DA — 지식이 복리로 자라는 AI 전환">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 브랜드 마크 — 세 점을 잇는 실. 사이트 로고와 같은 형태를 쓴다. -->
+  <g transform="translate(88,84)">
+    <circle cx="10" cy="14" r="8" fill="#fff"/>
+    <circle cx="58" cy="8" r="8" fill="#fff"/>
+    <circle cx="43" cy="52" r="8" fill="#fff"/>
+    <path d="M10 14 58 8M58 8 43 52M10 14l33 38" stroke="#fff" stroke-width="4" fill="none" opacity=".85"/>
+  </g>
+  <text x="176" y="122" fill="#fff" font-family="Malgun Gothic, sans-serif" font-size="40" font-weight="700">모두다</text>
+  <text x="286" y="122" fill="#94a3b8" font-family="Malgun Gothic, sans-serif" font-size="30">MODE-DA</text>
+
+  <text x="88" y="266" fill="#fff" font-family="Malgun Gothic, sans-serif" font-size="72" font-weight="700">지식이 복리로 자라는</text>
+  <text x="88" y="358" fill="#fbbf24" font-family="Malgun Gothic, sans-serif" font-size="72" font-weight="700">AI 전환</text>
+
+  <text x="88" y="430" fill="#cbd5e1" font-family="Malgun Gothic, sans-serif" font-size="30">온톨로지로 적고 · 에이전트가 만들고 · 사람이 승인한다</text>
+
+  <g font-family="Malgun Gothic, sans-serif" font-size="25" fill="#e2e8f0">
+    <rect x="88" y="490" width="228" height="60" rx="30" fill="#1e40af"/>
+    <text x="202" y="528" text-anchor="middle">AX 컨설턴트</text>
+    <rect x="336" y="490" width="266" height="60" rx="30" fill="#0f766e"/>
+    <text x="469" y="528" text-anchor="middle">기업 AX 챔피언</text>
+    <rect x="622" y="490" width="248" height="60" rx="30" fill="#6d28d9"/>
+    <text x="746" y="528" text-anchor="middle">프로덕트 창업</text>
+  </g>
+</svg>

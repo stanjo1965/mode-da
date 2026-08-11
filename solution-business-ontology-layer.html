@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>업무 온톨로지 계층 · S3 — 모두다 MODE-DA</title>
+<meta name="description" content="데이터를 옮기는 게 아니라 업무 객체로 다시 세웁니다. 테이블을 복사하는 통합이 아니라, 업무가 쓰는 객체와 관계로 다시 정의합니다.">
+<link rel="canonical" href="solution-business-ontology-layer.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect width='20' height='20' rx='4' fill='%230f172a'/%3E%3Ccircle cx='4.5' cy='6' r='2' fill='%23fff'/%3E%3Ccircle cx='15' cy='4.8' r='2' fill='%23fff'/%3E%3Ccircle cx='11.5' cy='15' r='2' fill='%23fff'/%3E%3Cpath d='M4.5 6 15 4.8M15 4.8 11.5 15M4.5 6l7 9' stroke='%23fff' stroke-width='1.2' fill='none' opacity='.85'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="모두다 MODE-DA">
+<meta property="og:title" content="업무 온톨로지 계층 · S3 — 모두다 MODE-DA">
+<meta property="og:description" content="데이터를 옮기는 게 아니라 업무 객체로 다시 세웁니다. 테이블을 복사하는 통합이 아니라, 업무가 쓰는 객체와 관계로 다시 정의합니다.">
+<meta property="og:image" content="assets/og-cover.svg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="업무 온톨로지 계층 · S3 — 모두다 MODE-DA">
+<meta name="twitter:description" content="데이터를 옮기는 게 아니라 업무 객체로 다시 세웁니다. 테이블을 복사하는 통합이 아니라, 업무가 쓰는 객체와 관계로 다시 정의합니다.">
+<meta name="twitter:image" content="assets/og-cover.svg">
+<meta name="theme-color" content="#0f172a">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/concept.css">
+<link rel="stylesheet" href="assets/solutions.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="m"><svg width="18" height="18" viewBox="0 0 20 20"><circle cx="4" cy="6" r="2.3" fill="#fff"/><circle cx="15.5" cy="4.5" r="2.3" fill="#fff"/><circle cx="12" cy="15.5" r="2.3" fill="#fff"/><path d="M4 6 15.5 4.5M15.5 4.5 12 15.5M4 6l8 9.5" stroke="#fff" stroke-width="1.4" fill="none" opacity=".85"/></svg></span>
+      <div>모두다 <span style="color:var(--text3)">MODE-DA</span><small>AI 전환 플랫폼</small></div>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="philosophy.html">사상</a><a href="platform.html">플랫폼</a>
+      <div class="nav-drop" id="navDrop">
+      <button class="nav-drop-btn on" id="solBtn" type="button" aria-expanded="false" aria-controls="solPanel" data-href="solutions.html">솔루션 <span class="caret" aria-hidden="true"></span></button>
+      <div class="sol-panel" id="solPanel" role="group" aria-label="솔루션 목록">
+        <div class="sol-grid">
+        <a class="sol-item" href="solution-grounded-knowledge-base.html">
+          <span class="sol-code">S1</span>
+          <span class="sol-text"><strong>근거 있는 지식 기반</strong><em>Grounded Knowledge Base</em><small>출처 없는 답을 하지 않는 지식 기반을 만듭니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-agent-operations.html">
+          <span class="sol-code">S2</span>
+          <span class="sol-text"><strong>AI 운영센터 — 실행하는 AI 조직</strong><em>Agent Operations</em><small>답변이 아니라 실행까지, 사람 승인을 거쳐 갑니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-business-ontology-layer.html" aria-current="page">
+          <span class="sol-code">S3</span>
+          <span class="sol-text"><strong>업무 온톨로지 계층</strong><em>Business Ontology Layer</em><small>데이터를 옮기는 게 아니라 업무 객체로 다시 세웁니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-owned-erp.html">
+          <span class="sol-code">S4</span>
+          <span class="sol-text"><strong>소유하는 맞춤 ERP</strong><em>Owned ERP</em><small>업무를 ERP에 맞추지 않습니다. ERP를 업무에 맞춥니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-continuous-modernization.html">
+          <span class="sol-code">S5</span>
+          <span class="sol-text"><strong>무중단 현대화</strong><em>Continuous Modernization</em><small>레거시를 멈추지 않은 채, 모듈 하나씩 바꿉니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="sol-item" href="solution-knowledge-compounding.html">
+          <span class="sol-code">S6</span>
+          <span class="sol-text"><strong>지식 복리</strong><em>Knowledge Compounding</em><small>한 일이 다음 일을 빠르게 만듭니다.</small></span>
+          <span class="sol-arrow" aria-hidden="true">↗</span>
+        </a>
+        </div>
+        <a class="sol-all" href="solutions.html">솔루션 전체 보기 <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+      <a href="landing.html">교육</a><a href="courses.html">과정 비교</a><a href="index.html#contact">도입 문의</a>
+    </nav>
+    <div class="navr">
+      <button class="tg" id="tg" title="테마 전환" aria-label="테마 전환">◐</button>
+      <span class="authbox" data-auth-slot></span>
+      <button class="burger" id="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span class="bl" aria-hidden="true"></span><span class="bl" aria-hidden="true"></span><span class="bl" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <span class="k">S3 · BUSINESS ONTOLOGY LAYER</span>
+    <h1>업무 온톨로지 계층</h1>
+    <p>테이블을 복사하는 통합이 아니라, 업무가 쓰는 객체와 관계로 다시 정의합니다.</p>
+    <div class="row">
+      <a href="index.html#contact" class="btn btn-primary">도입 상담</a>
+      <a href="solutions.html" class="btn btn-line" style="color:#cdd8ec">솔루션 전체 보기</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">01</span> 무엇을 하나</div>
+      <h2>데이터를 옮기는 게 아니라 업무 객체로 다시 세웁니다.</h2>
+      <p>실제로 하는 일만 적었습니다. 하지 않는 일은 적지 않았습니다.</p>
+    </div>
+    <ul class="doing">
+    <li><span class="i">01</span><span>ERP·엑셀·그룹웨어·메일·증빙을 하나의 기준정보로 정제·통합</span></li>
+    <li><span class="i">02</span><span>테이블이 아니라 업무 객체와 관계로 재정의(고객·계약·프로젝트·매출·전표)</span></li>
+    <li><span class="i">03</span><span>대사·검증·신뢰도 점수를 붙인 Trust Layer</span></li>
+    <li><span class="i">04</span><span>자동 파이프라인으로 항상 최신 — 사람이 취합하지 않는다</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">02</span> 실증</div>
+      <h2>자체 구축·검증한 것 (제안용 프로토타입 포함)</h2>
+      <p>고객사 사례가 아니라 사내 구축 결과입니다. 공개할 수 있는 구축 사례는 정리 중입니다.</p>
+    </div>
+    <div class="evid">
+      <div class="k">EVIDENCE</div>
+      <p>온톨로지 라이브러리 21개 산업 모듈(mes·scm·wms·tms·plm·aps·mro·hr·quality·finance·sales·crm·eam·lims·haccp·cgmp·esg·fems·logistics·digitaltwin·core), 표준 정합(OPC UA · PROV-O · FOAF/ORG · AAS · GS1 EPCIS).</p>
+    </div>
+  <div class="mlist">
+    <div class="mi"><div class="v tnum">21<span class="u">개</span></div><div class="k">온톨로지 산업 모듈</div><div class="s">근거 ontology-library</div></div>
+    <div class="mi"><div class="v tnum">16 / 12</div><div class="k">운송 도메인 업무 지도 접지 — 개념 / 이어짐 (실측 조인 확인)</div><div class="s">근거 접지 검증 스크립트</div></div>
+  </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow"><span class="no">03</span> 함께 보면 좋은 것</div>
+      <h2>이 층과 맞물리는 솔루션</h2>
+    </div>
+    <div class="solcards">
+      <a class="solcard" href="solution-grounded-knowledge-base.html">
+        <div class="c">S1</div>
+        <h3>근거 있는 지식 기반</h3>
+        <div class="en">Grounded Knowledge Base</div>
+        <p>출처 없는 답을 하지 않는 지식 기반을 만듭니다.</p>
+        <span class="go">자세히 보기 →</span>
+      </a>
+      <a class="solcard" href="solution-continuous-modernization.html">
+        <div class="c">S5</div>
+        <h3>무중단 현대화</h3>
+        <div class="en">Continuous Modernization</div>
+        <p>레거시를 멈추지 않은 채, 모듈 하나씩 바꿉니다.</p>
+        <span class="go">자세히 보기 →</span>
+      </a>
+    </div>
+    <div class="pager">
+      <a href="solution-agent-operations.html"><div class="k">이전</div><div class="v">S2 AI 운영센터 — 실행하는 AI 조직</div></a>
+      <a class="n" href="solution-owned-erp.html"><div class="k">다음</div><div class="v">S4 소유하는 맞춤 ERP</div></a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="cta" style="margin-top:0">
+      <div>
+        <h3>이 솔루션이 지금 상황에 맞는지 확인해 드립니다</h3>
+        <p>맞지 않으면 맞지 않다고 말씀드립니다. 억지로 끼워 넣은 구축은 결국 되돌아옵니다.</p>
+      </div>
+      <div class="row">
+        <a href="index.html#contact" class="btn btn-primary">도입 상담</a>
+        <a href="solutions.html" class="btn btn-line" style="color:#cdd8ec">솔루션 전체 보기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <span class="m"><svg width="18" height="18" viewBox="0 0 20 20"><circle cx="4" cy="6" r="2.3" fill="#fff"/><circle cx="15.5" cy="4.5" r="2.3" fill="#fff"/><circle cx="12" cy="15.5" r="2.3" fill="#fff"/><path d="M4 6 15.5 4.5M15.5 4.5 12 15.5M4 6l8 9.5" stroke="#fff" stroke-width="1.4" fill="none" opacity=".85"/></svg></span>
+      <div>모두다 · MODE-DA<small>AI 전환 플랫폼 · 구축 · 교육</small></div>
+    </div>
+    <p class="fine">이 페이지의 수치는 2026-08-09 기준 사내 실측값이며, 항목마다 세어 본 근거 파일 경로를 함께 적었습니다.
+      공개할 수 있는 구축 사례는 정리되는 대로 이 자리에 올립니다. 고객별 범위·기간·비용은 진단 결과에 따라 달라집니다.</p>
+    <p class="fine"><a href="privacy.html">개인정보처리방침</a> · <a href="terms.html">이용약관</a> · 운영 주체 — 사업자 등록 준비 중</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+<script src="assets/nav.js" defer></script>
+</body>
+</html>
