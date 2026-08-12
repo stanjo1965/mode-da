@@ -407,7 +407,12 @@
         <a href="platform.html" class="btn btn-line" style="color:#cdd8ec">플랫폼 자료</a>
       </div>
     </div>
-    <form id="consult-form" class="consult-form">
+    <form id="consult-form" class="consult-form" action="https://formsubmit.co/sangkeun.jo@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="[MODE-DA] 새로운 도입 상담 신청">
+      <input type="hidden" name="_next" value="https://stanjo1965.github.io/mode-da/thanks.html">
+      <input type="hidden" name="_url" value="https://stanjo1965.github.io/mode-da/">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
       <div class="consult-form-head">
         <div>
           <span class="k">CONTACT</span>
@@ -435,8 +440,8 @@
       </div>
       <label class="consult-consent"><input type="checkbox" required> 상담 회신을 위한 개인정보 수집·이용에 동의합니다.</label>
       <div class="consult-actions">
-        <button type="submit" class="btn btn-primary">이메일로 상담 신청 보내기</button>
-        <span class="fine">버튼을 누르면 기본 메일 앱에서 작성 내용과 수신 주소를 확인한 뒤 전송할 수 있습니다.</span>
+        <button type="submit" class="btn btn-primary">도입 상담 신청하기</button>
+        <span class="fine">신청 내용은 담당자 이메일로 안전하게 전달됩니다.</span>
       </div>
     </form>
   </div>
@@ -480,23 +485,5 @@
 
 <script src="assets/site.js" defer></script>
 <script src="assets/nav.js" defer></script>
-<script>
-document.getElementById('consult-form').addEventListener('submit', function (event) {
-  event.preventDefault();
-  if (!this.reportValidity()) return;
-  var data = new FormData(this);
-  var subject = '[MODE-DA 도입 상담] ' + data.get('company') + ' / ' + data.get('name');
-  var body = [
-    'MODE-DA 도입 상담을 신청합니다.', '',
-    '회사명: ' + data.get('company'),
-    '담당자명: ' + data.get('name'),
-    '이메일: ' + data.get('email'),
-    '연락처: ' + (data.get('phone') || '미입력'),
-    '관심 분야: ' + data.get('topic'), '',
-    '상담 내용:', data.get('message')
-  ].join('\n');
-  window.location.href = 'mailto:sangkeun.jo@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-});
-</script>
 </body>
 </html>
