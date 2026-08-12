@@ -396,16 +396,49 @@
 <!-- CTA -->
 <section id="contact">
   <div class="wrap">
-    <div class="cta">
+    <div class="cta consult-intro">
       <div>
         <h3>한 가닥부터 꿰어 보시겠습니까</h3>
         <p>2주 쓰레드 진단이면 어디서 얼마를 잃고 있는지 숫자로 나옵니다. 진단 결과가 마음에 들지 않으면
           거기서 멈추셔도 됩니다 — 진단서는 그대로 고객사 자산으로 남습니다.</p>
       </div>
       <div class="row">
+        <a href="#consult-form" class="btn btn-primary">상담 내용 작성</a>
         <a href="platform.html" class="btn btn-line" style="color:#cdd8ec">플랫폼 자료</a>
       </div>
     </div>
+    <form id="consult-form" class="consult-form">
+      <div class="consult-form-head">
+        <div>
+          <span class="k">CONTACT</span>
+          <h3>도입 상담 신청</h3>
+          <p>아래 내용을 작성해 보내시면 확인 후 회신드리겠습니다.</p>
+        </div>
+        <a href="mailto:sangkeun.jo@gmail.com" class="consult-email">sangkeun.jo@gmail.com</a>
+      </div>
+      <div class="consult-grid">
+        <div class="fld"><label for="consult-company">회사명 <span class="req">*</span></label>
+          <input id="consult-company" name="company" required autocomplete="organization" placeholder="회사명을 입력해 주세요"></div>
+        <div class="fld"><label for="consult-name">담당자명 <span class="req">*</span></label>
+          <input id="consult-name" name="name" required autocomplete="name" placeholder="성함을 입력해 주세요"></div>
+        <div class="fld"><label for="consult-email">이메일 <span class="req">*</span></label>
+          <input id="consult-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"></div>
+        <div class="fld"><label for="consult-phone">연락처</label>
+          <input id="consult-phone" name="phone" autocomplete="tel" placeholder="010-0000-0000"></div>
+        <div class="fld consult-wide"><label for="consult-topic">관심 분야</label>
+          <select id="consult-topic" name="topic">
+            <option>AX 진단</option><option>AX 플랫폼 구축</option><option>레거시 현대화</option>
+            <option>기업 AX 교육</option><option>기타 문의</option>
+          </select></div>
+        <div class="fld consult-wide"><label for="consult-message">상담 내용 <span class="req">*</span></label>
+          <textarea id="consult-message" name="message" required placeholder="현재 고민, 적용하려는 업무, 희망 일정 등을 알려주세요."></textarea></div>
+      </div>
+      <label class="consult-consent"><input type="checkbox" required> 상담 회신을 위한 개인정보 수집·이용에 동의합니다.</label>
+      <div class="consult-actions">
+        <button type="submit" class="btn btn-primary">이메일로 상담 신청 보내기</button>
+        <span class="fine">버튼을 누르면 기본 메일 앱에서 작성 내용과 수신 주소를 확인한 뒤 전송할 수 있습니다.</span>
+      </div>
+    </form>
   </div>
 </section>
 
@@ -447,5 +480,23 @@
 
 <script src="assets/site.js" defer></script>
 <script src="assets/nav.js" defer></script>
+<script>
+document.getElementById('consult-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  if (!this.reportValidity()) return;
+  var data = new FormData(this);
+  var subject = '[MODE-DA 도입 상담] ' + data.get('company') + ' / ' + data.get('name');
+  var body = [
+    'MODE-DA 도입 상담을 신청합니다.', '',
+    '회사명: ' + data.get('company'),
+    '담당자명: ' + data.get('name'),
+    '이메일: ' + data.get('email'),
+    '연락처: ' + (data.get('phone') || '미입력'),
+    '관심 분야: ' + data.get('topic'), '',
+    '상담 내용:', data.get('message')
+  ].join('\n');
+  window.location.href = 'mailto:sangkeun.jo@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
 </body>
 </html>
