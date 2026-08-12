@@ -18,6 +18,9 @@
 <meta name="twitter:description" content="모두다 AX 아카데미 — AX 컨설턴트 · 기업 AX 챔피언 · 프로덕트 창업 세 과정. 하루 100장+ 강의안과 강별 실습데이터, 앞 산출물이 다음 실습의 입력이 되는 연속 따라하기.">
 <meta name="twitter:image" content="assets/og-cover.svg">
 <meta name="theme-color" content="#0f172a">
+<!-- 머리말 드롭다운(.nav-drop/.sol-panel/.sol-item) 규칙은 site.css 에만 있다.
+     이 줄이 없으면 솔루션 메뉴가 스타일 없이 쏟아진다. 인라인 style 앞에 두어 페이지 고유 규칙을 살린다. -->
+<link rel="stylesheet" href="assets/site.css">
 <style>
   :root{
     --blue:#3182F6; --blue-press:#1B64DA; --blue-weak:#E8F3FF;
@@ -409,9 +412,7 @@
     <div class="navr">
       <button class="tg" id="tg" title="테마 전환" aria-label="테마 전환">◐</button>
       <span class="authbox" data-auth-slot>
-        <a href="login.html" class="btn btn-line sm">로그인</a>
-        <a href="signup.html" class="btn btn-primary sm">회원가입</a>
-      </span>
+        </span>
       <a href="#apply" class="btn btn-primary sm" data-apply>지원하기</a>
       <button class="burger" id="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks"><span class="bl" aria-hidden="true"></span><span class="bl" aria-hidden="true"></span><span class="bl" aria-hidden="true"></span></button>
     </div>

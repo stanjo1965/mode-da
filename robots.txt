@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# 인증 화면은 색인 대상이 아니다(각 페이지에 noindex도 함께 넣었다).
+Disallow: /login.html
+Disallow: /signup.html
+Disallow: /mypage.html
+
+Sitemap: sitemap.xml
